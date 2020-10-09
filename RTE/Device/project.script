@@ -1,0 +1,4 @@
+load STM32L433RCTx 
+project name STCubeGenerated 
+project toolchain "MDK-ARM V5" 
+project path "C:\Users\Asa McVay\Documents\GitHub\CANDL\RTE\Device\STM32L433RCTx\" 
