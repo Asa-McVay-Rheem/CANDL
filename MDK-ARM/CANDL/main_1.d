@@ -33,6 +33,8 @@ candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usb.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h
+candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd.h
+candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_sdmmc.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h
@@ -51,5 +53,15 @@ candl\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 candl\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 candl\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 candl\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+candl\main_1.o: ../FATFS/App/fatfs.h
+candl\main_1.o: ../Middlewares/Third_Party/FatFs/src/ff.h
+candl\main_1.o: ../Middlewares/Third_Party/FatFs/src/integer.h
+candl\main_1.o: ../FATFS/Target/ffconf.h
+candl\main_1.o: ../FATFS/Target/bsp_driver_sd.h
+candl\main_1.o: ../FATFS/Target/fatfs_platform.h
+candl\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+candl\main_1.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
+candl\main_1.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
+candl\main_1.o: ../FATFS/Target/sd_diskio.h
 candl\main_1.o: ../Core/Inc/dataCollect.h
 candl\main_1.o: ../Core/Inc/internetConnect.h
