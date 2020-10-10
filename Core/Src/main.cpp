@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "fatfs.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -44,6 +45,8 @@
 /* Private variables ---------------------------------------------------------*/
 CAN_HandleTypeDef hcan1;
 
+SD_HandleTypeDef hsd1;
+
 UART_HandleTypeDef huart1;
 
 PCD_HandleTypeDef hpcd_USB_FS;
@@ -59,10 +62,11 @@ osThreadId internetServiceHandle;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_CAN1_Init(void);
+static void MX_SDMMC1_SD_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USB_PCD_Init(void);
 void StartInit(void const * argument);
-void StartDataCollect(void const * argument);
+void StartDataCollection(void const * argument);
 void StartInternetServices(void const * argument);
 
 /* USER CODE BEGIN PFP */
@@ -103,8 +107,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_CAN1_Init();
+  MX_SDMMC1_SD_Init();
   MX_USART1_UART_Init();
   MX_USB_PCD_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -131,11 +137,11 @@ int main(void)
   initHandle = osThreadCreate(osThread(init), NULL);
 
   /* definition and creation of dataCollect */
-  osThreadDef(dataCollect, StartDataCollect, osPriorityIdle, 0, 128);
+  osThreadDef(dataCollect, StartDataCollection, osPriorityIdle, 0, 128);
   dataCollectHandle = osThreadCreate(osThread(dataCollect), NULL);
 
   /* definition and creation of internetService */
-  osThreadDef(internetService, StartInternetServices, osPriorityNormal, 0, 128);
+  osThreadDef(internetService, StartInternetServices, osPriorityIdle, 0, 128);
   internetServiceHandle = osThreadCreate(osThread(internetService), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -198,9 +204,11 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1|RCC_PERIPHCLK_USB;
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1|RCC_PERIPHCLK_USB
+                              |RCC_PERIPHCLK_SDMMC1;
   PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLLSAI1;
+  PeriphClkInit.Sdmmc1ClockSelection = RCC_SDMMC1CLKSOURCE_PLLSAI1;
   PeriphClkInit.PLLSAI1.PLLSAI1Source = RCC_PLLSOURCE_MSI;
   PeriphClkInit.PLLSAI1.PLLSAI1M = 1;
   PeriphClkInit.PLLSAI1.PLLSAI1N = 24;
@@ -239,8 +247,8 @@ static void MX_CAN1_Init(void)
   hcan1.Init.Prescaler = 16;
   hcan1.Init.Mode = CAN_MODE_NORMAL;
   hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
-  hcan1.Init.TimeSeg1 = CAN_BS1_3TQ;
-  hcan1.Init.TimeSeg2 = CAN_BS2_3TQ;
+  hcan1.Init.TimeSeg1 = CAN_BS1_4TQ;
+  hcan1.Init.TimeSeg2 = CAN_BS2_4TQ;
   hcan1.Init.TimeTriggeredMode = DISABLE;
   hcan1.Init.AutoBusOff = DISABLE;
   hcan1.Init.AutoWakeUp = DISABLE;
@@ -254,6 +262,34 @@ static void MX_CAN1_Init(void)
   /* USER CODE BEGIN CAN1_Init 2 */
 
   /* USER CODE END CAN1_Init 2 */
+
+}
+
+/**
+  * @brief SDMMC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SDMMC1_SD_Init(void)
+{
+
+  /* USER CODE BEGIN SDMMC1_Init 0 */
+
+  /* USER CODE END SDMMC1_Init 0 */
+
+  /* USER CODE BEGIN SDMMC1_Init 1 */
+
+  /* USER CODE END SDMMC1_Init 1 */
+  hsd1.Instance = SDMMC1;
+  hsd1.Init.ClockEdge = SDMMC_CLOCK_EDGE_RISING;
+  hsd1.Init.ClockBypass = SDMMC_CLOCK_BYPASS_DISABLE;
+  hsd1.Init.ClockPowerSave = SDMMC_CLOCK_POWER_SAVE_DISABLE;
+  hsd1.Init.BusWide = SDMMC_BUS_WIDE_1B;
+  hsd1.Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_DISABLE;
+  hsd1.Init.ClockDiv = 0;
+  /* USER CODE BEGIN SDMMC1_Init 2 */
+
+  /* USER CODE END SDMMC1_Init 2 */
 
 }
 
@@ -332,10 +368,19 @@ static void MX_USB_PCD_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOD_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+
+  /*Configure GPIO pin : PC13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
 }
 
@@ -361,23 +406,23 @@ void StartInit(void const * argument)
   /* USER CODE END 5 */
 }
 
-/* USER CODE BEGIN Header_StartDataCollect */
+/* USER CODE BEGIN Header_StartDataCollection */
 /**
 * @brief Function implementing the dataCollect thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartDataCollect */
-void StartDataCollect(void const * argument)
+/* USER CODE END Header_StartDataCollection */
+void StartDataCollection(void const * argument)
 {
-  /* USER CODE BEGIN StartDataCollect */
+  /* USER CODE BEGIN StartDataCollection */
 	storeData();
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END StartDataCollect */
+  /* USER CODE END StartDataCollection */
 }
 
 /* USER CODE BEGIN Header_StartInternetServices */

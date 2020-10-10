@@ -313,7 +313,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>4</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -328,8 +328,8 @@
             <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
-            <v6Lang>1</v6Lang>
-            <v6LangP>1</v6LangP>
+            <v6Lang>3</v6Lang>
+            <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32L433xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc; ../Drivers/STM32L4xx_HAL_Driver/Inc; ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy; ../Middlewares/Third_Party/FreeRTOS/Source/include; ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS; ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F; ../Drivers/CMSIS/Device/ST/STM32L4xx/Include; ../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc; ../FATFS/Target; ../FATFS/App; ../Drivers/STM32L4xx_HAL_Driver/Inc; ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy; ../Middlewares/Third_Party/FreeRTOS/Source/include; ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS; ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F; ../Middlewares/Third_Party/FatFs/src; ../Drivers/CMSIS/Device/ST/STM32L4xx/Include; ../Drivers/CMSIS/Include; ..\Core\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -394,19 +394,9 @@
           <GroupName>Application/User/Core</GroupName>
           <Files>
             <File>
-              <FileName>internetConnect.cpp</FileName>
+              <FileName>main.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\Core\Src\internetConnect.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>dataSend.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\Core\Src\dataSend.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>dataCollect.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\Core\Src\dataCollect.cpp</FilePath>
+              <FilePath>..\Core\Src\main.cpp</FilePath>
             </File>
             <File>
               <FileName>freertos.c</FileName>
@@ -429,24 +419,49 @@
               <FilePath>../Core/Src/stm32l4xx_hal_timebase_tim.c</FilePath>
             </File>
             <File>
-              <FileName>main.cpp</FileName>
+              <FileName>internetConnect.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\Core\Src\main.cpp</FilePath>
+              <FilePath>..\Core\Src\internetConnect.cpp</FilePath>
             </File>
             <File>
-              <FileName>dataCollect.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Core\Inc\dataCollect.h</FilePath>
+              <FileName>dataSend.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\dataSend.cpp</FilePath>
             </File>
             <File>
-              <FileName>internetConnect.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Core\Inc\internetConnect.h</FilePath>
+              <FileName>dataCollect.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Core\Src\dataCollect.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/User/FATFS/Target</GroupName>
+          <Files>
+            <File>
+              <FileName>bsp_driver_sd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../FATFS/Target/bsp_driver_sd.c</FilePath>
             </File>
             <File>
-              <FileName>dataSend.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Core\Inc\dataSend.h</FilePath>
+              <FileName>sd_diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../FATFS/Target/sd_diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>fatfs_platform.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../FATFS/Target/fatfs_platform.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Application/User/FATFS/App</GroupName>
+          <Files>
+            <File>
+              <FileName>fatfs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../FATFS/App/fatfs.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -534,6 +549,21 @@
               <FilePath>../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c</FilePath>
             </File>
             <File>
+              <FileName>stm32l4xx_ll_sdmmc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_sdmmc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l4xx_hal_sd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32l4xx_hal_sd_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd_ex.c</FilePath>
+            </File>
+            <File>
               <FileName>stm32l4xx_hal_tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c</FilePath>
@@ -577,6 +607,31 @@
               <FileName>system_stm32l4xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/system_stm32l4xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Middlewares/FatFs</GroupName>
+          <Files>
+            <File>
+              <FileName>diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/Third_Party/FatFs/src/diskio.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/Third_Party/FatFs/src/ff.c</FilePath>
+            </File>
+            <File>
+              <FileName>ff_gen_drv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/Third_Party/FatFs/src/ff_gen_drv.c</FilePath>
+            </File>
+            <File>
+              <FileName>syscall.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/Third_Party/FatFs/src/option/syscall.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -645,8 +700,8 @@
   <RTE>
     <apis/>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="4.3.0" condition="CMSIS Core">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="4.5.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.4.0" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.7.0"/>
         <targetInfos>
           <targetInfo name="CANDL"/>
         </targetInfos>

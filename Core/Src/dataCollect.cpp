@@ -7,7 +7,7 @@
 /*************************************************/
 
 #include "dataCollect.h"
-
+//#include "main.h"
 
 // function called from StartDataCollect function in main
 void storeData(void){
