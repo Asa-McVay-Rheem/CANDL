@@ -9,8 +9,16 @@
 
 #include "dataSend.h"
 
+
 void sendData(void){
-	while(1);
+	//initial MQTT connection
+	
+	//struct MQTTPacket_connectData 
+	while(1){
+		
+		
+		
+	}
 	
 }
 
