@@ -1,0 +1,13 @@
+candl\timerglue.o: TimerGlue.c
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src\MQTTClient.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src\FP.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPacket.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTConnect.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPublish.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTSubscribe.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTUnsubscribe.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTFormat.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\StackTrace.h
+candl\timerglue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPacket.h
+candl\timerglue.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src\MQTTLogging.h

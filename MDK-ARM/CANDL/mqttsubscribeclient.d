@@ -1,0 +1,11 @@
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTSubscribeClient.c
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPacket.h
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTConnect.h
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPublish.h
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTSubscribe.h
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTUnsubscribe.h
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTFormat.h
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\StackTrace.h
+candl\mqttsubscribeclient.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+candl\mqttsubscribeclient.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPacket.h
+candl\mqttsubscribeclient.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
