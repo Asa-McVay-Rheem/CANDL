@@ -1,0 +1,11 @@
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTFormat.c
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\StackTrace.h
+candl\mqttformat.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPacket.h
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTConnect.h
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPublish.h
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTSubscribe.h
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTUnsubscribe.h
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTFormat.h
+candl\mqttformat.o: ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPacket.h
+candl\mqttformat.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

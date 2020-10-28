@@ -28,9 +28,6 @@ candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_e
 candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h
 candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h
 candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h
-candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd.h
-candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_usb.h
-candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pcd_ex.h
 candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h
 candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h
 candl\bsp_driver_sd.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd.h
