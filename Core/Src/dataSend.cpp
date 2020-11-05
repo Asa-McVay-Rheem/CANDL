@@ -10,10 +10,12 @@
 #include "dataSend.h"
 
 
+
+
 void sendData(void){
 	//initial MQTT connection
 	
-	//struct MQTTPacket_connectData 
+	struct MQTTPacket_connectData credentials;
 	while(1){
 		
 		
