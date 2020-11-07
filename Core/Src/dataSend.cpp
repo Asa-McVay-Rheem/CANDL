@@ -15,7 +15,8 @@
 void sendData(void){
 	//initial MQTT connection
 	
-	struct MQTTPacket_connectData credentials;
+	//struct MQTTPacket_connectData credentials;
+	//IPStack ipstack = IPStack();
 	while(1){
 		
 		
