@@ -18,8 +18,8 @@
 #define MQTTFreeRTOS_H
 
 #include "FreeRTOS.h"
-#include "FreeRTOS_Sockets.h"
-#include "FreeRTOS_IP.h"
+//#include "FreeRTOS_Sockets.h"
+//#include "FreeRTOS_IP.h"
 #include "semphr.h"
 #include "task.h"
 
