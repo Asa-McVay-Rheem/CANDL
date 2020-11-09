@@ -12,6 +12,7 @@
 
 //make a connection to the internet over wifi or LTE
 void internetConnect(void){
+	sendData();
 	while(1);
 	
 }

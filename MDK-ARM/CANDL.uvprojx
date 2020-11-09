@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32L433xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;  ../FATFS/Target;  ../FATFS/App;  ../Drivers/STM32L4xx_HAL_Driver/Inc;  ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;  ../Middlewares/Third_Party/FreeRTOS/Source/include;  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;  ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;  ../Middlewares/Third_Party/FatFs/src;  ../Drivers/CMSIS/Device/ST/STM32L4xx/Include;  ../Drivers/CMSIS/Include;  ..\Core\Inc;  ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src;  ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src;  ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5;  ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src;  ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS</IncludePath>
+              <IncludePath>../Core/Inc;    ../FATFS/Target;    ../FATFS/App;    ../Drivers/STM32L4xx_HAL_Driver/Inc;    ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;    ../Middlewares/Third_Party/FreeRTOS/Source/include;    ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;    ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;    ../Middlewares/Third_Party/FatFs/src;    ../Drivers/CMSIS/Device/ST/STM32L4xx/Include;    ../Drivers/CMSIS/Include;    ..\Core\Inc;    ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src;    ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src;    ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5;    ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src;    ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -686,177 +686,10 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>MQTTV5/Client</GroupName>
-          <Files>
-            <File>
-              <FileName>FP.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src\FP.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTClient.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src\MQTTClient.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTLogging.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src\MQTTLogging.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTClient.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\MQTTClient.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTFreeRTOS.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS\MQTTFreeRTOS.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTFreeRTOS.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS\MQTTFreeRTOS.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>MQTTV5/Packet</GroupName>
-          <Files>
-            <File>
-              <FileName>MQTTConnect.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTConnect.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTConnectClient.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTConnectClient.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTConnectServer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTConnectServer.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTDeserializePublish.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTDeserializePublish.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTFormat.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTFormat.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTFormat.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTFormat.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTPacket.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPacket.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTPacket.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPacket.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTPublish.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTPublish.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTSerializePublish.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTSerializePublish.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTSubscribe.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTSubscribe.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTSubscribeClient.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTSubscribeClient.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTSubscribeServer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTSubscribeServer.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTUnsubscribe.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTUnsubscribe.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTUnsubscribeClient.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTUnsubscribeClient.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTUnsubscribeServer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\MQTTUnsubscribeServer.c</FilePath>
-            </File>
-            <File>
-              <FileName>StackTrace.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\StackTrace.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTProperties.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTProperties.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTProperties.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTProperties.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTReasonCodes.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTReasonCodes.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTV5Connect.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTV5Connect.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTV5Packet.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTV5Packet.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTV5Packet.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTV5Packet.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTV5Publish.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTV5Publish.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTV5Subscribe.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTV5Subscribe.h</FilePath>
-            </File>
-            <File>
-              <FileName>MQTTV5Unsubscribe.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5\MQTTV5Unsubscribe.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::Data Exchange</GroupName>
         </Group>
       </Groups>
     </Target>
@@ -867,6 +700,12 @@
     <components>
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.4.0" condition="ARMv6_7_8-M Device">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.7.0"/>
+        <targetInfos>
+          <targetInfo name="CANDL"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Data Exchange" Cgroup="JSON" Csub="Jsmn" Cvendor="MDK-Packs" Cversion="1.1.0">
+        <package license="LICENSE.txt" name="Jsmn" schemaVersion="1.6" url="https://github.com/MDK-Packs/Pack/raw/master/Jsmn/" vendor="MDK-Packs" version="1.1.0"/>
         <targetInfos>
           <targetInfo name="CANDL"/>
         </targetInfos>
