@@ -30,6 +30,8 @@ candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h
+candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc.h
+candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc_ex.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_sdmmc.h
 candl\main_1.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h
@@ -61,4 +63,6 @@ candl\main_1.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
 candl\main_1.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
 candl\main_1.o: ../FATFS/Target/sd_diskio.h
 candl\main_1.o: ../Core/Inc/dataCollect.h
+candl\main_1.o: ../Core/Inc/internetConnect.h
+candl\main_1.o: ../Core/Inc/dataSend.h
 candl\main_1.o: ../Core/Inc/internetConnect.h

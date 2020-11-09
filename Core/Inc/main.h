@@ -36,7 +36,6 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -56,6 +55,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SDIO_Detect_Pin GPIO_PIN_7
+#define SDIO_Detect_GPIO_Port GPIOB
+#define LTE_ON_Pin GPIO_PIN_5
+#define LTE_ON_GPIO_Port GPIOA
+#define LTE_RST_Pin GPIO_PIN_6
+#define LTE_RST_GPIO_Port GPIOA
 #define USART2_DTR_Pin GPIO_PIN_4
 #define USART2_DTR_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */

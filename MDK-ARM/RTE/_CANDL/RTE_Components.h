@@ -16,6 +16,8 @@
  */
 #define CMSIS_device_header "stm32l4xx.h"
 
+/*  MDK-Packs::Data Exchange:JSON:Jsmn:1.1.0 */
+#define RTE_DataExchange_JSON_Jsmn     /* Jsmn */
 
 
 #endif /* RTE_COMPONENTS_H */
