@@ -626,10 +626,10 @@ Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=candl\startup_stm32l433xx.d -ocandl\startup_stm32l433xx.o -I
 ..\Core\Inc -I.\RTE\_CANDL -I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CM
 SIS\5.7.0\CMSIS\Core\Include" -I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Kei
-l\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include" --predefine="_
-_EVAL SETA 1" --predefine="__UVISION_VERSION SETA 531" --predefine="_RTE_ SETA 
-1" --predefine="STM32L433xx SETA 1" --predefine="_RTE_ SETA 1" --list=startup_s
-tm32l433xx.lst startup_stm32l433xx.s
+l\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include" -I"C:\Users\As
+a McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0" --predefine="__UVISION_VE
+RSION SETA 531" --predefine="_RTE_ SETA 1" --predefine="STM32L433xx SETA 1" --p
+redefine="_RTE_ SETA 1" --list=startup_stm32l433xx.lst startup_stm32l433xx.s
 
 
 
@@ -1586,4 +1586,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-434 symbols in table
+433 symbols in table
