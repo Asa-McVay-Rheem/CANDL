@@ -8,18 +8,18 @@
 
 #include "dataCollect.h"
 //#include "main.h"
-//#include <string.h>
-//#include <assert.h>
-//#include <libopencm3/stm32/rcc.h>
-//#include <libopencm3/stm32/gpio.h>
-//#include <libopencm3/stm32/can.h>
+#include <string.h>
+#include <assert.h>
+#include <libopencm3/stm32/rcc.h>
+#include <libopencm3/stm32/gpio.h>
+#include <libopencm3/stm32/can.h>
 
 // function called from StartDataCollect function in main
 void storeData(void){
 	while(1);
 	
 }
-/*
+
 static can_rx_callback_t rx_callback = 0;
 
 typedef struct {
@@ -196,7 +196,7 @@ void candle_can_send_message(const can_message_t *msg) {
 	 * in that case, we want to queue them up.
 	 * for simplicity, we just put them in a queue here and leave the transmit handling
 	 * to candle_can_poll() / candle_can_handle_tx_queue()
-	 *
+	 */
 
 	assert( (msg->channel==0) || (msg->channel==1) );
 	channel_data_t *data = &channel_data[msg->channel];
@@ -429,4 +429,4 @@ void can_poll_leds(void) {
 		set_led_state(i, status->state);
 	}
 }
-*/
+
