@@ -14,7 +14,7 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/stm32/can.h>
 
-// 
+// function called from StartDataCollect function in main
 void storeData(void){
 	while(1);
 	
