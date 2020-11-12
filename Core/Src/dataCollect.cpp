@@ -119,7 +119,7 @@ void candle_can_init(void) {
 	rcc_periph_clock_enable(RCC_GPIOD);
 	gpio_mode_setup(GPIOD, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO12 | GPIO13 | GPIO14 | GPIO15);
 
-	// enable can1 peripheral
+	// enable can peripheral
 	rcc_periph_clock_enable(RCC_GPIOD);
 	rcc_periph_clock_enable(RCC_CAN1);
 	gpio_mode_setup(GPIOD, GPIO_MODE_AF, GPIO_PUPD_NONE, GPIO0 | GPIO1);
@@ -128,24 +128,11 @@ void candle_can_init(void) {
 	reset_can(CAN1);
 	init_can(CAN1);
 
-	// enable can1 transceiver
+	// enable can transceiver
 	rcc_periph_clock_enable(RCC_GPIOC);
 	gpio_mode_setup(GPIOC, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO6);
 	gpio_clear(GPIOC, GPIO6);
 
-	// enable can2 peripheral
-	rcc_periph_clock_enable(RCC_GPIOB);
-	rcc_periph_clock_enable(RCC_CAN2);
-	gpio_mode_setup(GPIOB, GPIO_MODE_AF, GPIO_PUPD_NONE, GPIO12 | GPIO13);
-	gpio_set_output_options(GPIOB, GPIO_OTYPE_PP, GPIO_OSPEED_100MHZ, GPIO12 | GPIO13);
-	gpio_set_af(GPIOB, GPIO_AF9, GPIO12 | GPIO13);
-	reset_can(CAN2);
-	init_can(CAN2);
-
-	// enable can2 transceiver
-	rcc_periph_clock_enable(RCC_GPIOD);
-	gpio_mode_setup(GPIOD, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO11);
-	gpio_clear(GPIOD, GPIO11);
 
 	// init filter banks
 	CAN_FMR(CAN1) |= CAN_FMR_FINIT; // switch filter banks to init mode
@@ -155,7 +142,7 @@ void candle_can_init(void) {
 	CAN_FMR(CAN1) |= (14<<CAN_FMR_CAN2SB_SHIFT);
 
 	can_filter_id_mask_32bit_init(CAN1,  0, 0, 0, 0, 1); // set a catch-all filter for CAN1 fifo 0
-	can_filter_id_mask_32bit_init(CAN2, 14, 0, 0, 0, 1); // set a catch-all filter for CAN2 fifo 0
+	
 
 	CAN_FMR(CAN1) &= ~CAN_FMR_FINIT; // switch filter banks to active mode
 
