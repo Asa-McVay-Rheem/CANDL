@@ -29,10 +29,7 @@ bool uartEchoDisable() {
 	{
 		transmitErrorHandler(at);
 	}
-	if (HAL_UART_Receive(&huart2,rcvbuf,11,10000) != HAL_OK)
-		{
-			receiveErrorHandler();
-		}
+
 	char msgEnd[] = "\r\nOK\r\n";	//Lines end in carrage return \r then linefeed \n
 	uint8_t i = 0;
 	while(i < 20){	//OK is prefixed with \r\n confirmed in puttty log and notepad++
