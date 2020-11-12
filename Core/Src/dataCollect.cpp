@@ -96,7 +96,7 @@ static int candle_can_goto_normal_mode(uint32_t can) {
 	return -1; // timeout waiting for INAK flag to become zero
 }
 
-static void clear_tx_queue(uint8_t channel) {
+/*static void clear_tx_queue(uint8_t channel) {
 	assert((channel==0) || (channel==1));
 	channel_data_t *data = &channel_data[channel];
 
@@ -106,7 +106,7 @@ static void clear_tx_queue(uint8_t channel) {
 	for (int i=0; i<TX_QUEUE_LENGTH; i++) {
 		can_queue_push_back(&data->tx_message_pool, &data->txqueue_items[i]);
 	}
-}
+}*/
 
 void candle_can_init(void) {
 	rx_callback = 0;
