@@ -116,7 +116,7 @@ void uartTransmit(char message[], uint8_t len){
 	{
 		transmitErrorHandler(message);
 	}
-	HAL_Delay(500);
+	//HAL_Delay(500);
 	
 	//check received message. If unsuccessful or receive no "OK", go to error handler
 	if (HAL_UART_Receive(&huart2,(uint8_t*)rcvbuf,3,10000) != HAL_OK)
@@ -162,7 +162,7 @@ void Publish(uint8_t* Message, uint8_t len, std::string topic){
 	{
 		transmitErrorHandler(string2char(ATmsg));
 	}
-	HAL_Delay(500);
+	//HAL_Delay(500);
 	
 	//check received message. If unsuccessful or receive no ">", go to error handler
 	if (HAL_UART_Receive(&huart2,(uint8_t*)rcvbuf,3,10000) != HAL_OK)
@@ -201,7 +201,7 @@ bool messageReceived(uint8_t* msgbuf){
 	{
 		transmitErrorHandler(ATbufcheck);
 	}
-	HAL_Delay(500);
+	//HAL_Delay(500);
 	
 	//check received message. If unsuccessful or receive no "OK", go to error handler
 	uint8_t i = 0;

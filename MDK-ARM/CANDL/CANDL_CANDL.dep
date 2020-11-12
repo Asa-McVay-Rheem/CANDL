@@ -1,10 +1,10 @@
 Dependencies for Project 'CANDL', Target 'CANDL': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (startup_stm32l433xx.s)(0x5FA95CE5)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I ..\Core\Inc-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"--pd "__UVISION_VERSION SETA 531" --pd "_RTE_ SETA 1" --pd "STM32L433xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32l433xx.lst --xref -o candl\startup_stm32l433xx.o --depend candl\startup_stm32l433xx.d)
-F (..\Core\Src\main.cpp)(0x5FA95D39)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\main_1.o --omf_browse candl\main_1.crf --depend candl\main_1.d)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+F (startup_stm32l433xx.s)(0x5FACBC3A)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I ..\Core\Inc-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"--pd "__UVISION_VERSION SETA 531" --pd "_RTE_ SETA 1" --pd "STM32L433xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32l433xx.lst --xref -o candl\startup_stm32l433xx.o --depend candl\startup_stm32l433xx.d)
+F (..\Core\Src\main.cpp)(0x5FACBCAF)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\main_1.o --omf_browse candl\main_1.crf --depend candl\main_1.d)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -42,7 +42,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -54,18 +54,18 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5F6D1864)
-I (../FATFS/App/fatfs.h)(0x5FA95CE2)
+I (../FATFS/App/fatfs.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5F6D1864)
-I (../FATFS/Target/ffconf.h)(0x5FA95CE2)
-I (../FATFS/Target/bsp_driver_sd.h)(0x5FA95CE2)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
+I (../FATFS/Target/ffconf.h)(0x5FACBC36)
+I (../FATFS/Target/bsp_driver_sd.h)(0x5FACBC36)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5F6D1864)
-I (../FATFS/Target/sd_diskio.h)(0x5FA95CE2)
+I (../FATFS/Target/sd_diskio.h)(0x5FACBC36)
 I (../Core/Inc/dataCollect.h)(0x5FA86058)
 I (../Core/Inc/internetConnect.h)(0x5FA860CB)
-I (../Core/Inc/dataSend.h)(0x5FAB12BD)
+I (../Core/Inc/dataSend.h)(0x5FAC3D7F)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_defs.h)(0x5EC82CD4)
@@ -128,7 +128,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\ostream.CC)(0x5EC82CCC)
 F (..\Core\Src\internetConnect.cpp)(0x5FA6FF52)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\internetconnect.o --omf_browse candl\internetconnect.crf --depend candl\internetconnect.d)
 I (../Core/Inc/internetConnect.h)(0x5FA860CB)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -164,7 +164,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../Core/Inc/dataSend.h)(0x5FAB12BD)
+I (../Core/Inc/dataSend.h)(0x5FAC3D7F)
 I (C:\Keil_v5\ARM\ARMCC\include\string)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\iosfwd)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_defs.h)(0x5EC82CD4)
@@ -221,7 +221,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\rw\_punct.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\sstream)(0x5EC82CCC)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -238,11 +238,11 @@ I (C:\Keil_v5\ARM\ARMCC\include\rw\_punct.CC)(0x5EC82CC4)
 I (C:\Keil_v5\ARM\ARMCC\include\rw\_numeric.CC)(0x5EC82CC4)
 I (C:\Keil_v5\ARM\ARMCC\include\ios.CC)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\ostream.CC)(0x5EC82CCC)
-F (..\Core\Src\dataSend.cpp)(0x5FAB153F)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\datasend.o --omf_browse candl\datasend.crf --depend candl\datasend.d)
-I (../Core/Inc/dataSend.h)(0x5FAB12BD)
+F (..\Core\Src\dataSend.cpp)(0x5FACBA2F)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\datasend.o --omf_browse candl\datasend.crf --depend candl\datasend.d)
+I (../Core/Inc/dataSend.h)(0x5FAC3D7F)
 I (../Core/Inc/internetConnect.h)(0x5FA860CB)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -334,7 +334,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\rw\_punct.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\sstream)(0x5EC82CCC)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -354,11 +354,11 @@ I (C:\Keil_v5\ARM\ARMCC\include\ostream.CC)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\sstream.CC)(0x5EC82CD4)
 F (..\Core\Src\dataCollect.cpp)(0x5F821541)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\datacollect.o --omf_browse candl\datacollect.crf --depend candl\datacollect.d)
 I (../Core/Inc/dataCollect.h)(0x5FA86058)
-F (../Core/Src/freertos.c)(0x5FA95CE1)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\freertos.o --omf_browse candl\freertos.crf --depend candl\freertos.d)
+F (../Core/Src/freertos.c)(0x5FACBC36)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\freertos.o --omf_browse candl\freertos.crf --depend candl\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -366,9 +366,9 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5F6D1864)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -402,50 +402,10 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-F (../Core/Src/stm32l4xx_it.c)(0x5FA95CE2)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_it.o --omf_browse candl\stm32l4xx_it.crf --depend candl\stm32l4xx_it.d)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+F (../Core/Src/stm32l4xx_it.c)(0x5FACBC37)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_it.o --omf_browse candl\stm32l4xx_it.crf --depend candl\stm32l4xx_it.d)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
-I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
-I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l433xx.h)(0x5F6D1854)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x5F6D1860)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5F6D1860)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5F6D1860)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5F6D1860)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5F6D1860)
-I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h)(0x5F6D1854)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5F6D1860)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_can.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc_ex.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_sdmmc.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_it.h)(0x5FA95CE2)
-F (../Core/Src/stm32l4xx_hal_msp.c)(0x5FA95CE2)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_msp.o --omf_browse candl\stm32l4xx_hal_msp.crf --depend candl\stm32l4xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x5FA95CE3)
-I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -481,9 +441,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-F (../Core/Src/stm32l4xx_hal_timebase_tim.c)(0x5FA95CE3)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_timebase_tim.o --omf_browse candl\stm32l4xx_hal_timebase_tim.crf --depend candl\stm32l4xx_hal_timebase_tim.d)
+I (../Core/Inc/stm32l4xx_it.h)(0x5FACBC37)
+F (../Core/Src/stm32l4xx_hal_msp.c)(0x5FACBC37)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_msp.o --omf_browse candl\stm32l4xx_hal_msp.crf --depend candl\stm32l4xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -519,10 +481,9 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-F (../FATFS/Target/bsp_driver_sd.c)(0x5FA95CE2)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\bsp_driver_sd.o --omf_browse candl\bsp_driver_sd.crf --depend candl\bsp_driver_sd.d)
-I (../FATFS/Target/bsp_driver_sd.h)(0x5FA95CE2)
+F (../Core/Src/stm32l4xx_hal_timebase_tim.c)(0x5FACBC37)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_timebase_tim.o --omf_browse candl\stm32l4xx_hal_timebase_tim.crf --depend candl\stm32l4xx_hal_timebase_tim.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -558,16 +519,55 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
-F (../FATFS/Target/sd_diskio.c)(0x5FA95CE2)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\sd_diskio.o --omf_browse candl\sd_diskio.crf --depend candl\sd_diskio.d)
+F (../FATFS/Target/bsp_driver_sd.c)(0x5FACBC36)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\bsp_driver_sd.o --omf_browse candl\bsp_driver_sd.crf --depend candl\bsp_driver_sd.d)
+I (../FATFS/Target/bsp_driver_sd.h)(0x5FACBC36)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
+I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
+I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l433xx.h)(0x5F6D1854)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5F6D1860)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5F6D1860)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5F6D1860)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5F6D1860)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5F6D1860)
+I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h)(0x5F6D1854)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5F6D1860)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_can.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rtc_ex.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sd.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_sdmmc.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
+I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
+F (../FATFS/Target/sd_diskio.c)(0x5FACBC37)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\sd_diskio.o --omf_browse candl\sd_diskio.crf --depend candl\sd_diskio.d)
 I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5F6D1864)
-I (../FATFS/Target/ffconf.h)(0x5FA95CE2)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+I (../FATFS/Target/ffconf.h)(0x5FACBC36)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -603,11 +603,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../FATFS/Target/bsp_driver_sd.h)(0x5FA95CE2)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
+I (../FATFS/Target/bsp_driver_sd.h)(0x5FACBC36)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -619,13 +619,13 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5F6D1864)
-I (../FATFS/Target/sd_diskio.h)(0x5FA95CE2)
+I (../FATFS/Target/sd_diskio.h)(0x5FACBC36)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5EC82CD4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC82CCC)
-F (../FATFS/Target/fatfs_platform.c)(0x5FA95CE2)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\fatfs_platform.o --omf_browse candl\fatfs_platform.crf --depend candl\fatfs_platform.d)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
+F (../FATFS/Target/fatfs_platform.c)(0x5FACBC37)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\fatfs_platform.o --omf_browse candl\fatfs_platform.crf --depend candl\fatfs_platform.d)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -661,14 +661,14 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-F (../FATFS/App/fatfs.c)(0x5FA95CE2)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\fatfs.o --omf_browse candl\fatfs.crf --depend candl\fatfs.d)
-I (../FATFS/App/fatfs.h)(0x5FA95CE2)
+F (../FATFS/App/fatfs.c)(0x5FACBC37)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\fatfs.o --omf_browse candl\fatfs.crf --depend candl\fatfs.d)
+I (../FATFS/App/fatfs.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5F6D1864)
-I (../FATFS/Target/ffconf.h)(0x5FA95CE2)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+I (../FATFS/Target/ffconf.h)(0x5FACBC36)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -704,11 +704,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../FATFS/Target/bsp_driver_sd.h)(0x5FA95CE2)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
+I (../FATFS/Target/bsp_driver_sd.h)(0x5FACBC36)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -722,10 +722,10 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5F6D1864)
-I (../FATFS/Target/sd_diskio.h)(0x5FA95CE2)
+I (../FATFS/Target/sd_diskio.h)(0x5FACBC36)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_can.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_can.o --omf_browse candl\stm32l4xx_hal_can.crf --depend candl\stm32l4xx_hal_can.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -763,7 +763,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal.o --omf_browse candl\stm32l4xx_hal.crf --depend candl\stm32l4xx_hal.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -801,7 +801,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_i2c.o --omf_browse candl\stm32l4xx_hal_i2c.crf --depend candl\stm32l4xx_hal_i2c.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -839,7 +839,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_i2c_ex.o --omf_browse candl\stm32l4xx_hal_i2c_ex.crf --depend candl\stm32l4xx_hal_i2c_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -877,7 +877,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_rcc.o --omf_browse candl\stm32l4xx_hal_rcc.crf --depend candl\stm32l4xx_hal_rcc.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -915,7 +915,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_rcc_ex.o --omf_browse candl\stm32l4xx_hal_rcc_ex.crf --depend candl\stm32l4xx_hal_rcc_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -953,7 +953,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_flash.o --omf_browse candl\stm32l4xx_hal_flash.crf --depend candl\stm32l4xx_hal_flash.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -991,7 +991,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_flash_ex.o --omf_browse candl\stm32l4xx_hal_flash_ex.crf --depend candl\stm32l4xx_hal_flash_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1029,7 +1029,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_flash_ramfunc.o --omf_browse candl\stm32l4xx_hal_flash_ramfunc.crf --depend candl\stm32l4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1067,7 +1067,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_gpio.o --omf_browse candl\stm32l4xx_hal_gpio.crf --depend candl\stm32l4xx_hal_gpio.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1105,7 +1105,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_dma.o --omf_browse candl\stm32l4xx_hal_dma.crf --depend candl\stm32l4xx_hal_dma.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1143,7 +1143,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_dma_ex.o --omf_browse candl\stm32l4xx_hal_dma_ex.crf --depend candl\stm32l4xx_hal_dma_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1181,7 +1181,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_pwr.o --omf_browse candl\stm32l4xx_hal_pwr.crf --depend candl\stm32l4xx_hal_pwr.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1219,7 +1219,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_pwr_ex.o --omf_browse candl\stm32l4xx_hal_pwr_ex.crf --depend candl\stm32l4xx_hal_pwr_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1257,7 +1257,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_cortex.o --omf_browse candl\stm32l4xx_hal_cortex.crf --depend candl\stm32l4xx_hal_cortex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1295,7 +1295,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_exti.o --omf_browse candl\stm32l4xx_hal_exti.crf --depend candl\stm32l4xx_hal_exti.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1333,7 +1333,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_rtc.o --omf_browse candl\stm32l4xx_hal_rtc.crf --depend candl\stm32l4xx_hal_rtc.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1371,7 +1371,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rtc_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_rtc_ex.o --omf_browse candl\stm32l4xx_hal_rtc_ex.crf --depend candl\stm32l4xx_hal_rtc_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1409,7 +1409,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_sdmmc.c)(0x5F6D1861)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_ll_sdmmc.o --omf_browse candl\stm32l4xx_ll_sdmmc.crf --depend candl\stm32l4xx_ll_sdmmc.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1447,7 +1447,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_sd.o --omf_browse candl\stm32l4xx_hal_sd.crf --depend candl\stm32l4xx_hal_sd.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1485,7 +1485,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_sd_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_sd_ex.o --omf_browse candl\stm32l4xx_hal_sd_ex.crf --depend candl\stm32l4xx_hal_sd_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1523,7 +1523,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_tim.o --omf_browse candl\stm32l4xx_hal_tim.crf --depend candl\stm32l4xx_hal_tim.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1561,7 +1561,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_tim_ex.o --omf_browse candl\stm32l4xx_hal_tim_ex.crf --depend candl\stm32l4xx_hal_tim_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1599,7 +1599,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_uart.o --omf_browse candl\stm32l4xx_hal_uart.crf --depend candl\stm32l4xx_hal_uart.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1637,7 +1637,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c)(0x5F6D1860)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\stm32l4xx_hal_uart_ex.o --omf_browse candl\stm32l4xx_hal_uart_ex.crf --depend candl\stm32l4xx_hal_uart_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1684,7 +1684,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h)(0x5F6D1854)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5F6D1860)
@@ -1716,10 +1716,10 @@ I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5F6D1864)
-I (../FATFS/Target/ffconf.h)(0x5FA95CE2)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+I (../FATFS/Target/ffconf.h)(0x5FACBC36)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1755,11 +1755,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../FATFS/Target/bsp_driver_sd.h)(0x5FA95CE2)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
+I (../FATFS/Target/bsp_driver_sd.h)(0x5FACBC36)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -1774,10 +1774,10 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5F6D1864
 F (../Middlewares/Third_Party/FatFs/src/ff.c)(0x5F6D1864)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\ff.o --omf_browse candl\ff.crf --depend candl\ff.d)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5F6D1864)
-I (../FATFS/Target/ffconf.h)(0x5FA95CE2)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+I (../FATFS/Target/ffconf.h)(0x5FACBC36)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1813,11 +1813,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../FATFS/Target/bsp_driver_sd.h)(0x5FA95CE2)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
+I (../FATFS/Target/bsp_driver_sd.h)(0x5FACBC36)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -1836,10 +1836,10 @@ I (../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/diskio.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/integer.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/ff.h)(0x5F6D1864)
-I (../FATFS/Target/ffconf.h)(0x5FA95CE2)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+I (../FATFS/Target/ffconf.h)(0x5FACBC36)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1875,11 +1875,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../FATFS/Target/bsp_driver_sd.h)(0x5FA95CE2)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
+I (../FATFS/Target/bsp_driver_sd.h)(0x5FACBC36)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -1894,10 +1894,10 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5F6D1864
 F (../Middlewares/Third_Party/FatFs/src/option/syscall.c)(0x5F6D1864)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../FATFS/Target -I ../FATFS/App -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/Third_Party/FatFs/src -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Inc -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTPacket\src\V5 -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src -I ..\paho.mqtt.embedded-c-mqttv5\MQTTClient-C\src\FreeRTOS-I.\RTE\_CANDL-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include"-I"C:\Users\Asa McVay\AppData\Local\Arm\Packs\MDK-Packs\Jsmn\1.1.0"-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L433xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L433xx-o candl\syscall.o --omf_browse candl\syscall.crf --depend candl\syscall.d)
 I (../Middlewares/Third_Party/FatFs/src/option/../ff.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FatFs/src/option/../integer.h)(0x5F6D1864)
-I (../FATFS/Target/ffconf.h)(0x5FA95CE2)
-I (../Core/Inc/main.h)(0x5FA95CE3)
+I (../FATFS/Target/ffconf.h)(0x5FACBC36)
+I (../Core/Inc/main.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x5F6D1860)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FA95CE3)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x5FACBC37)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x5F6D1860)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x5F6D1854)
@@ -1933,11 +1933,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x5F6D1860)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x5F6D1860)
-I (../FATFS/Target/bsp_driver_sd.h)(0x5FA95CE2)
-I (../FATFS/Target/fatfs_platform.h)(0x5FA95CE2)
+I (../FATFS/Target/bsp_driver_sd.h)(0x5FACBC36)
+I (../FATFS/Target/fatfs_platform.h)(0x5FACBC37)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -1953,7 +1953,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x5F6D1864)(--c99 -c -
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -1967,7 +1967,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC82CCC)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -1982,7 +1982,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC82CCC)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -1995,7 +1995,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5EC82CD4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -2009,7 +2009,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5EC82CD4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -2024,7 +2024,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5EC82CD4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -2039,7 +2039,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC82CCC)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -2055,7 +2055,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -2073,7 +2073,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC82CCC)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
@@ -2085,7 +2085,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c)(0x5
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5F6D1864)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC82CCC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC82CCC)
-I (../Core/Inc/FreeRTOSConfig.h)(0x5FAB104C)
+I (../Core/Inc/FreeRTOSConfig.h)(0x5FACC06F)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5F6D1864)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5F6D1864)
