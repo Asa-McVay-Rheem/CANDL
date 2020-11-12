@@ -107,6 +107,8 @@ uint8_t MQTTSetup(){
 //Transmit uart message and check return value. Will always check against "OK"
 //@param message: message to send to device
 //@param rcvbuf: buffer to store answer back into
+
+/*
 void uartTransmit(char message[], uint8_t len){
 	uint8_t success[] = {'\r','\n','O','K', '\r', '\n'};	//Terminal would output
 	uint8_t rcvbuf[6];
@@ -131,7 +133,7 @@ void uartTransmit(char message[], uint8_t len){
 	}
 	
 }
-
+*/
 
 //Form subscribe message to send over UART
 //@param topic: topic to subscribe to
@@ -145,8 +147,8 @@ void Subscribe(std::string topic){
 
 
 void Publish(uint8_t* Message, uint8_t len, std::string topic){
-	uint8_t success[] = {'\r', '\n', '>', '\r', '\n'};			//returned value should publish command be recognized
-	uint8_t rcvbuf[5];										//buffer returned message is written to
+	uint8_t success[] = {'>', '\0', '\n'};			//returned value should publish command be recognized
+	uint8_t rcvbuf[3];										//buffer returned message is written to
 	
 	//convert Message to string
 	std::string newmsg;
@@ -155,22 +157,22 @@ void Publish(uint8_t* Message, uint8_t len, std::string topic){
 		newmsg += Message[i];
 	}
 	//form AT command and JSON message
-	std::string ATmsg = "AT+QMTPUBEX=0,1000,1,0,"+topic+","+to_string(newmsg.length()+1);
+	std::string ATmsg = "AT+QMTPUBEX=0,1000,1,0,"+topic+","+to_string(newmsg.length());	//Why was there a +1
 	std::string toJSON = "{\"UID:\""+UID+",\"Payload\":"+newmsg+"}";
 	
 	//transmit AT message
-	if (HAL_UART_Transmit(&huart2, (uint8_t*)string2char(ATmsg), sizeof(ATmsg), 100) != HAL_OK)	//Needs correction on last char to \r
+	if (HAL_UART_Transmit(&huart2, (uint8_t*)string2char(ATmsg), sizeof(ATmsg), 100) != HAL_OK)
 	{
 		transmitErrorHandler(string2char(ATmsg));
 	}
 	//HAL_Delay(500);
 	
 	//check received message. If unsuccessful or receive no ">", go to error handler
-	if (HAL_UART_Receive(&huart2,(uint8_t*)rcvbuf,5,10000) != HAL_OK)
+	if (HAL_UART_Receive(&huart2,(uint8_t*)rcvbuf,3,10000) != HAL_OK)
 	{
 		receiveErrorHandler();
 	}
-	if (rcvbuf[0] != success[0] || rcvbuf[1] != success[1] || rcvbuf[2] != success[2] || rcvbuf[3] != success[3] || rcvbuf[4] != success[4]){
+	if (rcvbuf[0] != success[0] || rcvbuf[1] != success[1] || rcvbuf[2] != success[2]){
 		receiveErrorHandler();
 	}
 	
@@ -194,11 +196,11 @@ bool messageReceived(uint8_t* msgbuf){
 	for(int i = 0; i < 100; i++){
 		msgbuf[i] = 0;
 	}
-	char msgEnd[] = "OK\r\n";	//Lines end in carrage return \r then linefeed \n
+	char msgEnd[] = "4";	//Lines end in \0
+	char msgOK[] = "\0\n0";	//Text terminated by \0\n and ok = 0\0
 	uint8_t rcvbuf[1];
 	
 	//transmit message
-	ATbufcheck[sizeof(ATbufcheck) - 1] = '\r';	//Command line termination character not null but cr \r
 	if (HAL_UART_Transmit(&huart2, (uint8_t*)ATbufcheck, sizeof(ATbufcheck), 100) != HAL_OK)
 	{
 		transmitErrorHandler(ATbufcheck);
@@ -207,21 +209,24 @@ bool messageReceived(uint8_t* msgbuf){
 	
 	//check received message. If unsuccessful or receive no "OK", go to error handler
 	uint8_t i = 0;
-	while(msgbuf[2] != msgEnd[0] || msgbuf[3] != msgEnd[1] || msgbuf[4] != msgEnd[2]){	//OK is prefixed with \r\n confirmed in puttty log and notepad++
+	while(msgbuf[0] != msgEnd[0] || msgbuf[1] != msgEnd[1]){	// Check for Error
 		if (HAL_UART_Receive(&huart2,rcvbuf,1,10000) != HAL_OK)
 		{
 			receiveErrorHandler();
 		}
 		msgbuf[i] = rcvbuf[0];
-		if((i >= 4) && (msgbuf[i-3] == msgEnd[0] && msgbuf[i-2] == msgEnd[1] && msgbuf[i-1] == msgEnd[2] && msgbuf[i] == msgEnd[3])){
-			break;
+		if((i >= 1) && (msgbuf[i]   == msgOK[3] && msgbuf[i-1] == msgOK[2]
+								&&  msgbuf[i-2] == msgOK[1] && msgbuf[i-3] == msgOK[0])){
+			return true;
 		}
 		i++;
 	}
-	if (msgbuf[0] == msgEnd[0] && msgbuf[1] == msgEnd[1] && msgbuf[2] == msgEnd[2]){
+	if (msgbuf[0] == msgEnd[0] && msgbuf[1] == msgEnd[1]){
 		return false;
 	}
-	return true;
+	
+	receiveErrorHandler();
+	return false;	//Error out of bound not possible
 }
 
 

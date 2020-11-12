@@ -16,7 +16,7 @@ void sendData(void);
 
 void transmitErrorHandler(char message[]);
 void receiveErrorHandler(void);
-void uartTransmit(char message[], uint8_t len);
+//void uartTransmit(char message[], uint8_t len);
 uint8_t MQTTSetup(void);
 uint8_t MQTTSSLSetup(void);
 void Subscribe(std::string topic);
