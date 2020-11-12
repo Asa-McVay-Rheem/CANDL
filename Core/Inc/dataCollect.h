@@ -5,4 +5,9 @@
 
 void storeData(void);
 
+extern char SD_Path[];
+extern char CANdataFile[];
+extern char GPSdataFile[];
+extern char configFile[];
+
 #endif

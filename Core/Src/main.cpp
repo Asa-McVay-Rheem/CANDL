@@ -56,7 +56,9 @@ osThreadId initHandle;
 osThreadId dataCollectHandle;
 osThreadId internetServiceHandle;
 /* USER CODE BEGIN PV */
-
+FATFS SDFatFs; /* File system object for SD card logical drive */
+FIL MyFile; /* File object */
+char SD_Path[] = "0";
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -115,7 +117,10 @@ int main(void)
   MX_RTC_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-
+	//mount SD card
+	if(f_mount(&SDFatFs, (TCHAR const*)SD_Path, 0) != FR_OK){
+		//error handle
+	}
   /* USER CODE END 2 */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -489,7 +494,6 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartInit */
