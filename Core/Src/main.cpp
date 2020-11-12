@@ -382,7 +382,7 @@ static void MX_USART2_UART_Init(void)
   huart2.Init.StopBits = UART_STOPBITS_1;
   huart2.Init.Parity = UART_PARITY_NONE;
   huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_RTS_CTS;
+  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
   huart2.Init.OverSampling = UART_OVERSAMPLING_16;
   huart2.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
   huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
@@ -449,6 +449,9 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, LTE_ON_Pin|LTE_RST_Pin|USART2_DTR_Pin, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(SPI2_ChipSelect_GPIO_Port, SPI2_ChipSelect_Pin, GPIO_PIN_RESET);
+
   /*Configure GPIO pin : SDIO_Detect_Pin */
   GPIO_InitStruct.Pin = SDIO_Detect_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
@@ -468,6 +471,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LTE_RST_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : SPI2_ChipSelect_Pin */
+  GPIO_InitStruct.Pin = SPI2_ChipSelect_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(SPI2_ChipSelect_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : USART2_DTR_Pin */
   GPIO_InitStruct.Pin = USART2_DTR_Pin;
@@ -529,8 +539,8 @@ void StartDataCollection(void const * argument)
 void StartInternetServices(void const * argument)
 {
   /* USER CODE BEGIN StartInternetServices */
-	internetConnect();
   /* Infinite loop */
+	internetConnect();
   for(;;)
   {
     osDelay(1);

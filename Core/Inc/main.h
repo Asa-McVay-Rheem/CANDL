@@ -61,6 +61,8 @@ void Error_Handler(void);
 #define LTE_ON_GPIO_Port GPIOA
 #define LTE_RST_Pin GPIO_PIN_6
 #define LTE_RST_GPIO_Port GPIOA
+#define SPI2_ChipSelect_Pin GPIO_PIN_1
+#define SPI2_ChipSelect_GPIO_Port GPIOB
 #define USART2_DTR_Pin GPIO_PIN_4
 #define USART2_DTR_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
