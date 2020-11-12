@@ -7,6 +7,8 @@
 
 void internetConnect(void);
 
+bool uartMainTransmitAT(char message[], uint8_t len);
+
 
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
