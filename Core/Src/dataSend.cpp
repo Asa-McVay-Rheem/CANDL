@@ -20,8 +20,8 @@ void sendData(void){
 	pubTime = false;
 	
 	//buffers to store data
-	uint8_t CANMessage[64];
-	uint8_t rcvMsgBuf[100];
+	uint8_t CANMessage[8];
+	uint8_t rcvMsgBuf[20];
 	
 	//obtain unique ID in string form
 	UID = to_string(HAL_GetUIDw0())+to_string(HAL_GetUIDw1())+to_string(HAL_GetUIDw2());
@@ -108,8 +108,8 @@ uint8_t MQTTSetup(){
 //@param message: message to send to device
 //@param rcvbuf: buffer to store answer back into
 
-/*
-void uartTransmit(char message[], uint8_t len){
+
+/*void uartTransmit(char message[], uint8_t len){
 	uint8_t success[] = {'\r','\n','O','K', '\r', '\n'};	//Terminal would output
 	uint8_t rcvbuf[6];
 	
@@ -132,8 +132,8 @@ void uartTransmit(char message[], uint8_t len){
 		receiveErrorHandler();
 	}
 	
-}
-*/
+}*/
+
 
 //Form subscribe message to send over UART
 //@param topic: topic to subscribe to
