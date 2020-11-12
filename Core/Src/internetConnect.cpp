@@ -17,6 +17,9 @@ void internetConnect(void){
 	
 }
 
+<<<<<<< Updated upstream
+=======
+
 bool uartMainTransmitAT(char message[], uint8_t len) {
 	char msgEnd[] = "\r\nOK\r\n";	//Lines end in carrage return \r then linefeed \n
 	uint8_t rcvbuf[1];
@@ -50,4 +53,4 @@ bool uartMainTransmitAT(char message[], uint8_t len) {
 
 	return false;	//OK not found and expired msg buff
 }
-
+>>>>>>> Stashed changes
