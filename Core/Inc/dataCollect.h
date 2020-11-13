@@ -5,10 +5,13 @@
 
 void storeData(void);
 
+<<<<<<< HEAD
 extern char SD_Path[];
 extern char CANdataFile[];
 
 extern char GPSdataFile[];
 extern char configFile[];
 
+=======
+>>>>>>> parent of 5d822c1... Add SD card init
 #endif
