@@ -1,3 +1,4 @@
 
 *.moham
 MDK-ARM/CANDL/CANDL.build_log.htm
+Core/Inc/dataCollect.h
