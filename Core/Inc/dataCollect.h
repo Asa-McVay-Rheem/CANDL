@@ -11,5 +11,4 @@ extern char CANdataFile[];
 extern char GPSdataFile[];
 extern char configFile[];
 
-
 #endif
