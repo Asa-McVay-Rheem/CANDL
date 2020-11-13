@@ -15,9 +15,9 @@ bool pubTime;
 void sendData(void){
 	
 	//timer setup
-	TimerHandle_t pubTim = xTimerCreate("Publish Data Timer",pdMS_TO_TICKS(ONEHOUR),pdTRUE,(void *) 0,pubTimCallback);
-	xTimerStart(pubTim, 1000);
-	pubTime = false;
+	//TimerHandle_t pubTim = xTimerCreate("Publish Data Timer",pdMS_TO_TICKS(ONEHOUR),pdTRUE,(void *) 0,pubTimCallback);
+	//xTimerStart(pubTim, 1000);
+	pubTime = true;
 	
 	//buffers to store data
 	uint8_t CANMessage[8];
@@ -31,7 +31,7 @@ void sendData(void){
 	
 	while(1){
 		if(pubTime == true){
-			pubTime = false;
+			//pubTime = false;
 			if (getNextMsg(CANMessage) != HAL_ERROR){
 				do{
 						Publish(CANMessage,64,CANtopic);
