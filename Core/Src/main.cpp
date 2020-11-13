@@ -269,7 +269,27 @@ static void MX_CAN1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN CAN1_Init 2 */
+/*CAN_FilterTypeDef sf;
+sf.FilterBank = 0;
+sf.FilterMode = CAN_FILTERMODE_IDMASK;
+sf.FilterScale = CAN_FILTERSCALE_16BIT;
+sf.FilterIdLow = 0xffff;
+sf.FilterIdHigh = 0x1fff;
+sf.FilterMaskIdLow = 0x0000;
+sf.FilterMaskIdHigh = 0x0000;
+sf.FilterFIFOAssignment = CAN_RX_FIFO0;
+sf.SlaveStartFilterBank = 0;
+sf.FilterActivation = ENABLE;
+if (HAL_CAN_ConfigFilter(&hcan, &sf) != HAL_OK) {
+    Error_Handler();
+}
+if (HAL_CAN_Start(&hcan) != HAL_OK) {
+    Error_Handler();
+}
 
+if (HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING) != HAL_OK) {
+    Error_Handler();
+}*/
   /* USER CODE END CAN1_Init 2 */
 
 }
