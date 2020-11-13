@@ -513,7 +513,15 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+//message received callback
+/*void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
+    CAN_RxHeaderTypeDef rxmsg;
+    uint8_t rxData[8];
 
+    if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rxmsg, rxData) != HAL_OK) {
+        Error_Handler();
+    }
+}*/
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartInit */
