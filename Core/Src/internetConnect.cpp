@@ -17,6 +17,7 @@ void internetConnect(void){
 	
 }
 
+<<<<<<< HEAD
 
 //bool uartMainTransmitAT(char message[], uint8_t len) {
 //	char msgEnd[] = "\r\nOK\r\n";	//Lines end in carrage return \r then linefeed \n
@@ -52,3 +53,5 @@ void internetConnect(void){
 //	return false;	//OK not found and expired msg buff
 //}
 
+=======
+>>>>>>> parent of ab0038a... Add SD Card file system init

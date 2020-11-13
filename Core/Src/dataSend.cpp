@@ -243,8 +243,6 @@ char* string2char(std::string str){
 	return result;
 }
 
-
-
 void pubTimCallback(TimerHandle_t xTimer){
 	pubTime = true;
 }
