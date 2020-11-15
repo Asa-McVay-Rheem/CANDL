@@ -14,6 +14,7 @@
 void internetConnect(void){
 	//Disable Echo
 	uartEchoDisable();
+	uartEndSymbol();
 	char coder[] = "ATV0";
 	uartTransmit(coder, 5);	//Enable Response codes instead
 	sendData();
@@ -41,7 +42,34 @@ bool uartEchoDisable() {
 		if((i >= 6) && (msgbuf[i-6] == msgEnd[0] 
 		&& msgbuf[i-5] == msgEnd[1] && msgbuf[i-4] == msgEnd[2]
 		&& msgbuf[i-3] == msgEnd[3] && msgbuf[i-2] == msgEnd[4]
-		&& msgbuf[i-1] == msgEnd[5] && msgbuf[i]   == msgEnd[6])){
+		&& msgbuf[i-1] == msgEnd[5])){
+			return true;	//Found OK
+		}
+		i++;
+	}
+	return false;
+}
+
+bool uartEndSymbol() {
+	char at[] = "ATS3=0\r";	//Echo disable
+	uint8_t rcvbuf[1];	//Echo + rn ok rn
+	char msgbuf[20];
+	if (HAL_UART_Transmit(&huart2, (uint8_t*)at, 7, 100) != HAL_OK)
+	{
+		transmitErrorHandler(at);
+	}
+
+	char msgEnd[] = "\r\nOK\r\n";	//Lines end in carrage return \r then linefeed \n
+	uint8_t i = 0;
+	while(i < 20){	//OK is prefixed with \r\n confirmed in puttty log and notepad++
+		if (HAL_UART_Receive(&huart2,rcvbuf,1,10000) != HAL_OK)
+		{
+			receiveErrorHandler();
+		}
+		msgbuf[i] = rcvbuf[0];
+		if((i >= 6) && (msgbuf[i-5] == msgEnd[1] && msgbuf[i-4] == msgEnd[2]
+		&& msgbuf[i-3] == msgEnd[3]
+		&& msgbuf[i-1] == msgEnd[5])){
 			return true;	//Found OK
 		}
 		i++;

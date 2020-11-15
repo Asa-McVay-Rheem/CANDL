@@ -9,6 +9,7 @@ void internetConnect(void);
 
 bool uartTransmit(char message[], uint8_t len);
 bool uartEchoDisable();
+bool uartEndSymbol();
 
 
 extern UART_HandleTypeDef huart2;
