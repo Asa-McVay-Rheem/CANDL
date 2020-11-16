@@ -567,8 +567,8 @@ void StartDataCollection(void const * argument)
 void StartInternetServices(void const * argument)
 {
   /* USER CODE BEGIN StartInternetServices */
-  /* Infinite loop */
 	internetConnect();
+  /* Infinite loop */
   for(;;)
   {
     osDelay(1);
