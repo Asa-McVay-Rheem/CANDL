@@ -60,6 +60,10 @@ extern CAN_HandleTypeDef hcan1;
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
 extern TIM_HandleTypeDef htim1;
+extern CAN_TxHeaderTypeDef pHeader;
+extern CAN_RxHeaderTypeDef pRxHeader;
+extern uint32_t TxMailbox;
+extern uint8_t a,r;
 
 /* USER CODE BEGIN EV */
 
@@ -167,7 +171,7 @@ void DebugMon_Handler(void)
 void CAN1_TX_IRQHandler(void)
 {
   /* USER CODE BEGIN CAN1_TX_IRQn 0 */
-
+  HAL_CAN_AddTxMessage(&hcan1, &pHeader, &a, &TxMailbox);
   /* USER CODE END CAN1_TX_IRQn 0 */
   HAL_CAN_IRQHandler(&hcan1);
   /* USER CODE BEGIN CAN1_TX_IRQn 1 */
@@ -185,7 +189,7 @@ void CAN1_RX0_IRQHandler(void)
   /* USER CODE END CAN1_RX0_IRQn 0 */
   HAL_CAN_IRQHandler(&hcan1);
   /* USER CODE BEGIN CAN1_RX0_IRQn 1 */
-
+  HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &pRxHeader, &r);
   /* USER CODE END CAN1_RX0_IRQn 1 */
 }
 
@@ -199,7 +203,7 @@ void CAN1_RX1_IRQHandler(void)
   /* USER CODE END CAN1_RX1_IRQn 0 */
   HAL_CAN_IRQHandler(&hcan1);
   /* USER CODE BEGIN CAN1_RX1_IRQn 1 */
-
+  
   /* USER CODE END CAN1_RX1_IRQn 1 */
 }
 
