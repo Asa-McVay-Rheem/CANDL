@@ -131,7 +131,7 @@ int main(void)
 	
 	//filter one (stack light blink)
 	sFilterConfig.FilterFIFOAssignment=CAN_FILTER_FIFO0; //set fifo assignment
-	sFilterConfig.FilterIdHigh=0x245<<5; //the ID that the filter looks for
+	sFilterConfig.FilterIdHigh=0; //the ID that the filter looks for
 	sFilterConfig.FilterIdLow=0;
 	sFilterConfig.FilterMaskIdHigh=0;
 	sFilterConfig.FilterMaskIdLow=0;
@@ -184,7 +184,7 @@ int main(void)
  	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_12, GPIO_PIN_RESET);
 	f_close(&MyFile);
  	// Open the text file object with read access 
- 	if(f_open(&MyFile, "Hello.txt", FA_READ) != FR_OK){
+ 	if(f_open(&MyFile, "CANDL.txt", FA_READ) != FR_OK){
  	/* 'CANDL.txt' file Open for read Error : set the red LED on */
  	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
  	while(1);
