@@ -121,7 +121,25 @@ int main(void)
   MX_RTC_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+	pHeader.DLC=1; //give message size of 1 byte
+	pHeader.IDE=CAN_ID_STD; //set identifier to standard
+	pHeader.RTR=CAN_RTR_DATA; //set data type to remote transmission request?
+	pHeader.StdId=0x244; //define a standard identifier, used for message identification by filters (switch this for the other microcontroller)
+	
+	//filter one (stack light blink)
+	sFilterConfig.FilterFIFOAssignment=CAN_FILTER_FIFO0; //set fifo assignment
+	sFilterConfig.FilterIdHigh=0x245<<5; //the ID that the filter looks for
+	sFilterConfig.FilterIdLow=0;
+	sFilterConfig.FilterMaskIdHigh=0;
+	sFilterConfig.FilterMaskIdLow=0;
+	sFilterConfig.FilterScale=CAN_FILTERSCALE_32BIT; //set filter scale
+	sFilterConfig.FilterActivation=ENABLE;
+	
+	HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig); //configure CAN filter
 
+	
+	HAL_CAN_Start(&hcan1); //start CAN
+	HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING); //enable interrupts
   /* USER CODE END 2 */
 
   /* USER CODE BEGIN RTOS_MUTEX */
