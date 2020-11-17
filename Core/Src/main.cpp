@@ -190,7 +190,7 @@ int main(void)
  	while(1);
  	} 
 	else {
- 	// Read data from the text file #########*/
+ 	// Read data from the text file 
  	res = f_read(&MyFile, rtext, sizeof(wtext), &bytesread);
 		if((strcmp(rtext,wtext)!=0)|| (res != FR_OK)){
  	// 'CANDL.txt' file Read or EOF Error : set the red LED on 
