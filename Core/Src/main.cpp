@@ -127,7 +127,7 @@ int main(void)
 	pHeader.DLC=1; //give message size of 1 byte
 	pHeader.IDE=CAN_ID_STD; //set identifier to standard
 	pHeader.RTR=CAN_RTR_DATA; //set data type to remote transmission request?
-	pHeader.StdId=0x244; //define a standard identifier, used for message identification by filters (switch this for the other microcontroller)
+	pHeader.StdId=0x244; //define a standard identifier, used for message identification by filters
 	
 	//filter one (stack light blink)
 	sFilterConfig.FilterFIFOAssignment=CAN_FILTER_FIFO0; //set fifo assignment
@@ -157,7 +157,7 @@ int main(void)
  	while(1);
  	} 
 	else {
-	// Create a FAT file system (format) on the logical drive#*/
+	// Create a FAT file system (format) on the logical drive
  	// WARNING: Formatting the uSD card will delete all content on the device 
  	if(f_mkfs((TCHAR const*)SD_Path, 0, 0) != FR_OK){
  	// FatFs Format Error : set the red LED on 
@@ -165,7 +165,7 @@ int main(void)
 	 while(1);
  	} 
 	else {
-	// Create & Open a new text file object with write access#*/
+	// Create & Open a new text file object with write access
  	if(f_open(&MyFile, "CANDL.txt", FA_CREATE_ALWAYS | FA_WRITE) != FR_OK){
  	/* 'CANDL.txt' file Open for write Error : set the red LED on */
  	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
@@ -185,7 +185,7 @@ int main(void)
 	f_close(&MyFile);
  	// Open the text file object with read access 
  	if(f_open(&MyFile, "CANDL.txt", FA_READ) != FR_OK){
- 	/* 'CANDL.txt' file Open for read Error : set the red LED on */
+ 	// 'CANDL.txt' file Open for read Error : set the red LED on 
  	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
  	while(1);
  	} 
