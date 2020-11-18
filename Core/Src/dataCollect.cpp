@@ -57,8 +57,7 @@ void storeData(void){
 	
 	while(1);
 	
-	/*
-	 
+	///////////////////////////////// 
 	if(f_mount(&SDFatFs, (TCHAR const*)SD_Path, 0) != FR_OK){
 		while(1);
  	} 
@@ -71,9 +70,41 @@ void storeData(void){
 	else {
 	// Create & Open a new text file object with write access
  	if(f_open(&MyFile, "CANDL.txt", FA_CREATE_ALWAYS | FA_WRITE) != FR_OK){
+	while(1);
+ 	} 
+	else {
+ 	// Write data to the text file 
+ 	res = f_write(&MyFile, wtext, sizeof(wtext), (void*)&byteswritten);
+ 	if((byteswritten == 0) || (res != FR_OK)){
+ 	// 'CANDL.txt' file Write or EOF Error : set the red LED on 
+ 	
+ 	while(1);
+ 	} 
+	else {
+ 	// Successful open/write : set the blue LED on 
+ 	
+	f_close(&MyFile);
+ 	// Open the text file object with read access 
+ 	if(f_open(&MyFile, "CANDL.txt", FA_READ) != FR_OK){
+ 	// 'CANDL.txt' file Open for read Error : set the red LED on 
+ 	
+ 	while(1);
+ 	} 
+	else {
+ 	// Read data from the text file 
+ 	res = f_read(&MyFile, rtext, sizeof(wtext), &r);
+		if((strcmp(rtext,wtext)!=0)|| (res != FR_OK)){
+ 	// 'CANDL.txt' file Read or EOF Error 	
+ 	while(1);
+ 	} 
+	else {
+ 	// Successful read
+ 	// Close the open text file 
+ 	f_close(&MyFile);
+	
+		}
 	
 	
-	*/
 	
 }
 
