@@ -19,6 +19,7 @@ CAN_RxHeaderTypeDef pRxHeader; //declare header for message reception
 uint32_t TxMailbox;
 uint8_t a,r; //declare byte to be transmitted //declare a receive byte
 CAN_FilterTypeDef sFilterConfig; //declare CAN filter structure
+CANMessage = msg;
 
 int receivedCAN = 0;
 
@@ -74,19 +75,19 @@ void storeData(void){
  	} 
 	else {
  	// Write data to the text file 
- 	res = f_write(&MyFile, wtext, sizeof(wtext), (void*)&byteswritten);
+ 	res = f_write(&MyFile, msg, sizeof(msg), (void*)&byteswritten);
  	if((byteswritten == 0) || (res != FR_OK)){
- 	// 'CANDL.txt' file Write or EOF Error : set the red LED on 
+ 	// 'CANDL.txt' file Write or EOF Error 
  	
  	while(1);
  	} 
 	else {
- 	// Successful open/write : set the blue LED on 
+ 	// Successful open/write
  	
 	f_close(&MyFile);
- 	// Open the text file object with read access 
+ 	/*// Open the text file object with read access 
  	if(f_open(&MyFile, "CANDL.txt", FA_READ) != FR_OK){
- 	// 'CANDL.txt' file Open for read Error : set the red LED on 
+ 	// 'CANDL.txt' file Open for read Error
  	
  	while(1);
  	} 
@@ -102,7 +103,7 @@ void storeData(void){
  	// Close the open text file 
  	f_close(&MyFile);
 	
-		}
+		}*/
 	
 	
 	
