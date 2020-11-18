@@ -59,11 +59,11 @@ osThreadId internetServiceHandle;
 /* USER CODE BEGIN PV */
 FATFS SDFatFs; // File system object for SD card logical drive 
 FIL MyFile; // File object 
-CAN_TxHeaderTypeDef pHeader; //declare a specific header for message transmittions
-CAN_RxHeaderTypeDef pRxHeader; //declare header for message reception
-uint32_t TxMailbox;
-uint8_t a,r; //declare byte to be transmitted //declare a receive byte
-CAN_FilterTypeDef sFilterConfig; //declare CAN filter structure
+//CAN_TxHeaderTypeDef pHeader; //declare a specific header for message transmittions
+//CAN_RxHeaderTypeDef pRxHeader; //declare header for message reception
+//uint32_t TxMailbox;
+//uint8_t a,r; //declare byte to be transmitted //declare a receive byte
+//CAN_FilterTypeDef sFilterConfig; //declare CAN filter structure
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -124,94 +124,83 @@ int main(void)
   MX_RTC_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-	pHeader.DLC=1; //give message size of 1 byte
-	pHeader.IDE=CAN_ID_STD; //set identifier to standard
-	pHeader.RTR=CAN_RTR_DATA; //set data type to remote transmission request?
-	pHeader.StdId=0x244; //define a standard identifier, used for message identification by filters
-	
-	//filter one (stack light blink)
-	sFilterConfig.FilterFIFOAssignment=CAN_FILTER_FIFO0; //set fifo assignment
-	sFilterConfig.FilterIdHigh=0; //the ID that the filter looks for
-	sFilterConfig.FilterIdLow=0;
-	sFilterConfig.FilterMaskIdHigh=0;
-	sFilterConfig.FilterMaskIdLow=0;
-	sFilterConfig.FilterScale=CAN_FILTERSCALE_32BIT; //set filter scale
-	sFilterConfig.FilterActivation=ENABLE;
-	
-	HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig); //configure CAN filter
+//	pHeader.DLC=1; //give message size of 1 byte
+//	pHeader.IDE=CAN_ID_STD; //set identifier to standard
+//	pHeader.RTR=CAN_RTR_DATA; //set data type to remote transmission request?
+//	pHeader.StdId=0x244; //define a standard identifier, used for message identification by filters
+//	
+//	//filter one (stack light blink)
+//	sFilterConfig.FilterFIFOAssignment=CAN_FILTER_FIFO0; //set fifo assignment
+//	sFilterConfig.FilterIdHigh=0; //the ID that the filter looks for
+//	sFilterConfig.FilterIdLow=0;
+//	sFilterConfig.FilterMaskIdHigh=0;
+//	sFilterConfig.FilterMaskIdLow=0;
+//	sFilterConfig.FilterScale=CAN_FILTERSCALE_32BIT; //set filter scale
+//	sFilterConfig.FilterActivation=ENABLE;
+//	
+//	HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig); //configure CAN filter
 
+//	
+//	HAL_CAN_Start(&hcan1); //start CAN
+//	HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING); //enable interrupts
 	
-	HAL_CAN_Start(&hcan1); //start CAN
-	HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING); //enable interrupts
-	
-	// Turn all LEDs off(red, green, orange and blue) 
- 	HAL_GPIO_WritePin(GPIOG, (GPIO_PIN_10 | GPIO_PIN_6 | GPIO_PIN_7 | GPIO_PIN_12), GPIO_PIN_SET);
-	// FatFS: Link the SD disk I/O driver 
- 	if(retSD == 0){
-	// success: set the orange LED on 
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_7, GPIO_PIN_RESET);
-	// Register the file system object to the FatFs module 
- 	if(f_mount(&SDFatFs, (TCHAR const*)SD_Path, 0) != FR_OK){
- 	// FatFs Initialization Error : set the red LED on */
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
- 	while(1);
- 	} 
-	else {
-	// Create a FAT file system (format) on the logical drive
- 	// WARNING: Formatting the uSD card will delete all content on the device 
- 	if(f_mkfs((TCHAR const*)SD_Path, 0, 0) != FR_OK){
- 	// FatFs Format Error : set the red LED on 
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
-	 while(1);
- 	} 
-	else {
-	// Create & Open a new text file object with write access
- 	if(f_open(&MyFile, "CANDL.txt", FA_CREATE_ALWAYS | FA_WRITE) != FR_OK){
- 	/* 'CANDL.txt' file Open for write Error : set the red LED on */
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
- 	while(1);
- 	} 
-	else {
- 	// Write data to the text file 
- 	res = f_write(&MyFile, wtext, sizeof(wtext), (void*)&byteswritten);
- 	if((byteswritten == 0) || (res != FR_OK)){
- 	// 'CANDL.txt' file Write or EOF Error : set the red LED on 
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
- 	while(1);
- 	} 
-	else {
- 	// Successful open/write : set the blue LED on 
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_12, GPIO_PIN_RESET);
-	f_close(&MyFile);
- 	// Open the text file object with read access 
- 	if(f_open(&MyFile, "CANDL.txt", FA_READ) != FR_OK){
- 	// 'CANDL.txt' file Open for read Error : set the red LED on 
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
- 	while(1);
- 	} 
-	else {
- 	// Read data from the text file 
- 	res = f_read(&MyFile, rtext, sizeof(wtext), &bytesread);
-		if((strcmp(rtext,wtext)!=0)|| (res != FR_OK)){
- 	// 'CANDL.txt' file Read or EOF Error : set the red LED on 
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
- 	while(1);
- 	} 
-	else {
- 	// Successful read : set the green LED On 
- 	HAL_GPIO_WritePin(GPIOG, GPIO_PIN_6, GPIO_PIN_RESET);
- 	// Close the open text file 
- 	f_close(&MyFile);
- 
-		}
-	}
-	}
-	}
-	}
-	}
-}
+ 	//if(f_mount(&SDFatFs, (TCHAR const*)SD_Path, 0) != FR_OK){
+	//	while(1);
+ 	//} 
+	//else {
+	//// Create a FAT file system (format) on the logical drive
+ 	//// WARNING: Formatting the uSD card will delete all content on the device 
+	//	if(f_mkfs((TCHAR const*)SD_Path, 0, 0) != FR_OK){
+	// while(1);
+ 	//} 
+	//else {
+	//// Create & Open a new text file object with write access
+ 	//if(f_open(&MyFile, "CANDL.txt", FA_CREATE_ALWAYS | FA_WRITE) != FR_OK){
+ 	///* 'CANDL.txt' file Open for write Error : set the red LED on */
+ 	//HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
+ 	//while(1);
+ 	//} 
+	//else {
+ 	//// Write data to the text file 
+ 	//res = f_write(&MyFile, wtext, sizeof(wtext), (void*)&byteswritten);
+ 	//if((byteswritten == 0) || (res != FR_OK)){
+ 	//// 'CANDL.txt' file Write or EOF Error : set the red LED on 
+ 	//HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
+ 	//while(1);
+ 	//} 
+	//else {
+ 	//// Successful open/write : set the blue LED on 
+ 	//HAL_GPIO_WritePin(GPIOG, GPIO_PIN_12, GPIO_PIN_RESET);
+	//f_close(&MyFile);
+ 	//// Open the text file object with read access 
+ 	//if(f_open(&MyFile, "CANDL.txt", FA_READ) != FR_OK){
+ 	//// 'CANDL.txt' file Open for read Error : set the red LED on 
+ 	//HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
+ 	//while(1);
+ 	//} 
+	//else {
+ 	//// Read data from the text file 
+ 	//res = f_read(&MyFile, rtext, sizeof(wtext), &bytesread);
+	//	if((strcmp(rtext,wtext)!=0)|| (res != FR_OK)){
+ 	//// 'CANDL.txt' file Read or EOF Error : set the red LED on 
+ 	//HAL_GPIO_WritePin(GPIOG, GPIO_PIN_10, GPIO_PIN_RESET);
+ 	//while(1);
+ 	//} 
+	//else {
+ 	//// Successful read : set the green LED On 
+ 	//HAL_GPIO_WritePin(GPIOG, GPIO_PIN_6, GPIO_PIN_RESET);
+ 	//// Close the open text file 
+ 	//f_close(&MyFile);
+	//
+	//	}
+	//}
+	//}
+	//}
+	//}
+	//}
+//}
  	// Unlink the micro SD disk I/O driver 
- 	FATFS_UnLinkDriver(SD_Path);
+ 	//FATFS_UnLinkDriver(SD_Path);
   /* USER CODE END 2 */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -323,10 +312,10 @@ static void MX_CAN1_Init(void)
   /* USER CODE END CAN1_Init 1 */
   hcan1.Instance = CAN1;
   hcan1.Init.Prescaler = 16;
-  hcan1.Init.Mode = CAN_MODE_LOOPBACK;
+  hcan1.Init.Mode = CAN_MODE_NORMAL;
   hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
-  hcan1.Init.TimeSeg1 = CAN_BS1_1TQ;
-  hcan1.Init.TimeSeg2 = CAN_BS2_1TQ;
+  hcan1.Init.TimeSeg1 = CAN_BS1_4TQ;
+  hcan1.Init.TimeSeg2 = CAN_BS2_4TQ;
   hcan1.Init.TimeTriggeredMode = DISABLE;
   hcan1.Init.AutoBusOff = DISABLE;
   hcan1.Init.AutoWakeUp = DISABLE;
