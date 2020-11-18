@@ -58,8 +58,19 @@ void storeData(void){
 	while(1);
 	
 	/*
-	// 
-	
+	 
+	if(f_mount(&SDFatFs, (TCHAR const*)SD_Path, 0) != FR_OK){
+		while(1);
+ 	} 
+	else {
+	// Create a FAT file system (format) on the logical drive
+ 	// WARNING: Formatting the uSD card will delete all content on the device 
+		if(f_mkfs((TCHAR const*)SD_Path, 0, 0) != FR_OK){
+	 while(1);
+ 	} 
+	else {
+	// Create & Open a new text file object with write access
+ 	if(f_open(&MyFile, "CANDL.txt", FA_CREATE_ALWAYS | FA_WRITE) != FR_OK){
 	
 	
 	*/
