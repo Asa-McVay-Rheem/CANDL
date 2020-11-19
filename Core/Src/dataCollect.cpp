@@ -14,12 +14,11 @@
 //#include <libopencm3/stm32/gpio.h>
 //#include <libopencm3/stm32/can.h>
 
-CAN_TxHeaderTypeDef pHeader; //declare a specific header for message transmittions
 CAN_RxHeaderTypeDef pRxHeader; //declare header for message reception
 uint32_t TxMailbox;
-uint8_t a,r; //declare byte to be transmitted //declare a receive byte
+uint8_t r; //declare a receive byte
 CAN_FilterTypeDef sFilterConfig; //declare CAN filter structure
-CANMessage = msg;
+//CANMessage = msg;
 
 int receivedCAN = 0;
 
@@ -75,7 +74,7 @@ void storeData(void){
  	} 
 	else {
  	// Write data to the text file 
- 	res = f_write(&MyFile, msg, sizeof(msg), (void*)&byteswritten);
+ 	res = f_write(&MyFile, pRxHeader, sizeof(msg), (void*)&byteswritten);
  	if((byteswritten == 0) || (res != FR_OK)){
  	// 'CANDL.txt' file Write or EOF Error 
  	
