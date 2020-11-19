@@ -571,14 +571,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-//message received callback
-/*void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
-    CAN_RxHeaderTypeDef rxmsg;
-    uint8_t rxData[8];
-
-    if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rxmsg, rxData) != HAL_OK) {
-        Error_Handler();
-    }
+//overwrite interrupt callback
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
+    if (hcan->Instance == hcan1.Instance)
+	{
+		uint8_t buf[8];
+		CAN_RxHeaderTypeDef pRxHeader;
+		if (HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &pRxHeader, buf)			// Get the received data header and data
+				== HAL_OK)
+		{
+			HAL_CAN_ActivateNotification(hcan, CAN_IT_RX_FIFO0_MSG_PENDING);	// Enable FIFO0 receive interrupt again
+		}
+	}
 }*/
 /* USER CODE END 4 */
 
