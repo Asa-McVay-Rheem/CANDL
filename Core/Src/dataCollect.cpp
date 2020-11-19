@@ -26,12 +26,12 @@ int receivedCAN = 0;
 void storeData(void){
 	//while(1);
 	
-  //pHeader.DLC=1; //give message size of 1 byte
-	//pHeader.IDE=CAN_ID_STD; //set identifier to standard
-	//pHeader.RTR=CAN_RTR_DATA; //set data type to remote transmission request?
-	//pHeader.StdId=0x244; //define a standard identifier, used for message identification by filters
+  //pRxHeader.DLC=1; //give message size of 1 byte
+	//pRxHeader.IDE=CAN_ID_STD; //set identifier to standard
+	//pRxHeader.RTR=CAN_RTR_DATA; //set data type to remote transmission request?
+	//pRxHeader.StdId=0x244; //define a standard identifier, used for message identification by filters
 	
-	//filter one (stack light blink)
+	//filter one 
 	//sFilterConfig.FilterFIFOAssignment=CAN_FILTER_FIFO0; //set fifo assignment
 	//sFilterConfig.FilterIdHigh=0; //the ID that the filter looks for
 	//sFilterConfig.FilterIdLow=0;
@@ -74,7 +74,7 @@ void storeData(void){
  	} 
 	else {
  	// Write data to the text file 
- 	res = f_write(&MyFile, pRxHeader, sizeof(msg), (void*)&byteswritten);
+ 	res = f_write(&MyFile, hcan1, sizeof(hcan1), (void*)&byteswritten);
  	if((byteswritten == 0) || (res != FR_OK)){
  	// 'CANDL.txt' file Write or EOF Error 
  	
@@ -103,10 +103,8 @@ void storeData(void){
  	f_close(&MyFile);
 	
 		}*/
-	
-	
-	
-}
+	}	
+
 
 
 
