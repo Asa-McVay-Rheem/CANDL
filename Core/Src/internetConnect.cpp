@@ -32,7 +32,7 @@ void uartSetup() {
 
 //Break or stop after receiving \r or \0 depending on terminating char
 int uartTransmit(char message[], uint8_t len, char* buffer, int bufflen) {
-	if(receiveSetup(buffer, bufflen, 'c'))
+	if(!receiveSetup(buffer, bufflen, 'c'))
 		receiveErrorHandler();
 	
 	if (HAL_UART_Transmit(&huart2, (uint8_t*)message, len, 100) != HAL_OK)

@@ -139,7 +139,7 @@ uint8_t MQTTSetup(){
 //@param topic: topic to subscribe to
 void Subscribe(std::string topic){
 	//form message
-	std::string subMsg = "AT+QMTSUB=0,1,\""+topic+",2";
+	std::string subMsg = "AT+QMTSUB=0,1,\""+UID+"/"+topic+"\""+",2";
 	
 	//send subscribe message
 	uartTransmit(string2char(subMsg), subMsg.length());
@@ -156,7 +156,7 @@ void Publish(uint8_t* Message, uint8_t len, std::string topic){
 		newmsg += Message[i];
 	}
 	//form AT command and JSON message
-	std::string ATmsg = "AT+QMTPUBEX=0,1000,1,0,"+topic+","+to_string(newmsg.length());	//Why was there a +1
+	std::string ATmsg = "AT+QMTPUBEX=0,1000,1,0,"+topic+","+to_string(newmsg.length());
 	std::string toJSON = "{\"UID:\""+UID+",\"Payload\":"+newmsg+"}";
 	
 	//Setup recieve
