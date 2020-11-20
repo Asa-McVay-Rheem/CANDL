@@ -248,7 +248,7 @@ void USART2_IRQHandler(void)
 		char rx = (char)(USART2->RDR & 0x00FF);	//Recieved Char
 		int i = 0;
 		if(~(buffi < bufflength))
-					mode = -1; //Error
+					mode = 1; //Error
 		
 		switch(mode) {
 			
@@ -303,7 +303,7 @@ void USART2_IRQHandler(void)
 				
 			case 'y':
 				if(rx == '\n')	mode = 'z';
-				else		mode = -1;
+				else		mode = 1;
 				
 				if(buffi == 0)
 					mode = 0;

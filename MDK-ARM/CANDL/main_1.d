@@ -122,6 +122,7 @@ candl\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_numeric.h
 candl\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_punct.h
 candl\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\sstream
 candl\main_1.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+candl\main_1.o: ../Core/Inc/stm32l4xx_it.h
 candl\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.CC
 candl\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_punct.CC
 candl\main_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_numeric.CC

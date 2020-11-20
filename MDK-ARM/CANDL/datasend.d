@@ -40,6 +40,7 @@ candl\datasend.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h
 candl\datasend.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h
 candl\datasend.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h
 candl\datasend.o: ../Core/Inc/dataSend.h
+candl\datasend.o: ../Core/Inc/stm32l4xx_it.h
 candl\datasend.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string
 candl\datasend.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd
 candl\datasend.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h

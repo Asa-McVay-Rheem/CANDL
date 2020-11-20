@@ -109,6 +109,7 @@ candl\internetconnect.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/time
 candl\internetconnect.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 candl\internetconnect.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 candl\internetconnect.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+candl\internetconnect.o: ../Core/Inc/stm32l4xx_it.h
 candl\internetconnect.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.CC
 candl\internetconnect.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_punct.CC
 candl\internetconnect.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_numeric.CC

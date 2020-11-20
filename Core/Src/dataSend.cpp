@@ -192,12 +192,12 @@ uint8_t getNextMsg(uint8_t* CANMessage){
 }
 
 
-bool messageReceived(char * msgbuf){
+bool messageReceived(uint8_t* msgbuf){
 	char ATbufcheck[] = "AT+QMTRECV=0,0";	//Consider deleting ,0
 	char msgEnd = '4';
 	char msgOK = '0';
 	
-	uint8_t i = uartTransmit(ATbufcheck, sizeof(ATbufcheck), msgbuf, 20);
+	int i = uartTransmit(ATbufcheck, sizeof(ATbufcheck), (char*)msgbuf, 20);
 	
 	if(msgbuf[i-2] == msgOK) {
 		return true;

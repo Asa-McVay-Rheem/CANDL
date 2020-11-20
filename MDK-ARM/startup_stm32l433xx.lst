@@ -62,7 +62,7 @@ ARM Macro Assembler    Page 1
    39 00000400         ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
    40 00000400         ; </h>
    41 00000400         
-   42 00000400 00000200 
+   42 00000400 00000BB8 
 
 
 
@@ -70,21 +70,21 @@ ARM Macro Assembler    Page 2
 
 
                        Heap_Size
-                               EQU              0x200
+                               EQU              0xBB8
    43 00000400         
    44 00000400                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
 3
    45 00000000         __heap_base
    46 00000000         Heap_Mem
                                SPACE            Heap_Size
-   47 00000200         __heap_limit
-   48 00000200         
-   49 00000200                 PRESERVE8
-   50 00000200                 THUMB
-   51 00000200         
-   52 00000200         
-   53 00000200         ; Vector Table Mapped to Address 0 at Reset
-   54 00000200                 AREA             RESET, DATA, READONLY
+   47 00000BB8         __heap_limit
+   48 00000BB8         
+   49 00000BB8                 PRESERVE8
+   50 00000BB8                 THUMB
+   51 00000BB8         
+   52 00000BB8         
+   53 00000BB8         ; Vector Table Mapped to Address 0 at Reset
+   54 00000BB8                 AREA             RESET, DATA, READONLY
    55 00000000                 EXPORT           __Vectors
    56 00000000                 EXPORT           __Vectors_End
    57 00000000                 EXPORT           __Vectors_Size
@@ -620,7 +620,7 @@ ARM Macro Assembler    Page 10
               00000000 
               00000000 
               00000400 
-              00000200 
+              00000BB8 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=candl\startup_stm32l433xx.d -ocandl\startup_stm32l433xx.o -I
@@ -693,7 +693,7 @@ Symbol: __heap_base
    Uses
       None
 Comment: __heap_base unused
-__heap_limit 00000200
+__heap_limit 00000BB8
 
 Symbol: __heap_limit
    Definitions
@@ -1528,7 +1528,7 @@ Relocatable symbols
 ARM Macro Assembler    Page 1 Alphabetic symbol ordering
 Absolute symbols
 
-Heap_Size 00000200
+Heap_Size 00000BB8
 
 Symbol: Heap_Size
    Definitions

@@ -65,10 +65,10 @@ bool receiveSetup(char* buffin, uint8_t len, char cmode) {
 }
 
 int receiveComplete() {
-	while(mode != 0 || mode != -1)	//Wait for completion
+	while(mode != 0 || mode != 1)	//Wait for completion
 		osDelay(10);
 	
-	if (mode == -1)
+	if (mode == 1)
 		return -1;
 	
 	return buffi;

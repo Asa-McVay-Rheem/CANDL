@@ -4,7 +4,7 @@
 
 #include "stm32l4xx_hal.h"
 #include "dataSend.h"
-
+#include "stm32l4xx_it.h"
 void internetConnect(void);
 
 bool uartTransmit(char message[], uint8_t len);
