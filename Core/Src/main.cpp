@@ -595,7 +595,7 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 //overwrite interrupt callback
-/*
+
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
     if (hcan->Instance == hcan1.Instance)
 	{
@@ -607,7 +607,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
 			HAL_CAN_ActivateNotification(hcan, CAN_IT_RX_FIFO0_MSG_PENDING);	// Enable FIFO0 receive interrupt again
 		}
 	}
-}*/
+}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartInit */
