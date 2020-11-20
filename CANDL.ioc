@@ -1,8 +1,9 @@
 #MicroXplorer Configuration settings - do not modify
-CAN1.BS1=CAN_BS1_4TQ
-CAN1.BS2=CAN_BS2_4TQ
-CAN1.CalculateTimeQuantum=200.0
-CAN1.IPParameters=CalculateTimeQuantum,BS1,BS2
+CAN1.BS1=CAN_BS1_13TQ
+CAN1.BS2=CAN_BS2_2TQ
+CAN1.CalculateTimeQuantum=125.0
+CAN1.IPParameters=CalculateTimeQuantum,BS1,BS2,Prescaler
+CAN1.Prescaler=10
 FATFS.BSP.number=1
 FATFS.IPParameters=_USE_MUTEX
 FATFS._USE_MUTEX=1
