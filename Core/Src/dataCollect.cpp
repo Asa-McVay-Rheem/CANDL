@@ -16,9 +16,8 @@
 
 CAN_RxHeaderTypeDef pRxHeader; //declare header for message reception
 uint32_t TxMailbox;
-uint8_t a,r; //declare a receive byte
+uint8_t r; //declare a receive byte
 CAN_FilterTypeDef sFilterConfig; //declare CAN filter structure
-CAN_TxHeaderTypeDef pHeader;
 //CANMessage = msg;
 
 int receivedCAN = 0;
@@ -59,32 +58,32 @@ void storeData(void){
 	while(1);
 	
 	///////////////////////////////// 
-	//if(f_mount(&SDFatFs, (TCHAR const*)SD_Path, 0) != FR_OK){
-	//	while(1);
- 	//} 
-	//else {
-	//// Create a FAT file system (format) on the logical drive
- 	//// WARNING: Formatting the uSD card will delete all content on the device 
-	//	if(f_mkfs((TCHAR const*)SD_Path, 0, 0) != FR_OK){
-	// while(1);
- 	//} 
-	//else {
-	//// Create & Open a new text file object with write access
- 	//if(f_open(&MyFile, "CANDL.txt", FA_CREATE_ALWAYS | FA_WRITE) != FR_OK){
-	//while(1);
- 	//} 
-	//else {
- 	//// Write data to the text file 
- 	//res = f_write(&MyFile, hcan1, sizeof(hcan1), (void*)&byteswritten);
- 	//if((byteswritten == 0) || (res != FR_OK)){
- 	//// 'CANDL.txt' file Write or EOF Error 
- 	//
- 	//while(1);
- 	//} 
-	//else {}
- 	//// Successful open/write
- 	//
-	//f_close(&MyFile);
+	if(f_mount(&SDFatFs, (TCHAR const*)SD_Path, 0) != FR_OK){
+		while(1);
+ 	} 
+	else {
+	// Create a FAT file system (format) on the logical drive
+ 	// WARNING: Formatting the uSD card will delete all content on the device 
+		if(f_mkfs((TCHAR const*)SD_Path, 0, 0) != FR_OK){
+	 while(1);
+ 	} 
+	else {
+	// Create & Open a new text file object with write access
+ 	if(f_open(&MyFile, "CANDL.txt", FA_CREATE_ALWAYS | FA_WRITE) != FR_OK){
+	while(1);
+ 	} 
+	else {
+ 	// Write data to the text file 
+ 	res = f_write(&MyFile, hcan1, sizeof(hcan1), (void*)&byteswritten);
+ 	if((byteswritten == 0) || (res != FR_OK)){
+ 	// 'CANDL.txt' file Write or EOF Error 
+ 	
+ 	while(1);
+ 	} 
+	else {
+ 	// Successful open/write
+ 	
+	f_close(&MyFile);
  	/*// Open the text file object with read access 
  	if(f_open(&MyFile, "CANDL.txt", FA_READ) != FR_OK){
  	// 'CANDL.txt' file Open for read Error
@@ -104,9 +103,6 @@ void storeData(void){
  	f_close(&MyFile);
 	
 		}*/
-	//}
-	//}
-	//}
 	}	
 
 
