@@ -147,8 +147,7 @@ void Subscribe(std::string topic){
 
 
 void Publish(uint8_t* Message, uint8_t len, std::string topic){
-	uint8_t success[] = {'>', '\0', '\n'};			//returned value should publish command be recognized
-	uint8_t rcvbuf[3];										//buffer returned message is written to
+	char rcvbuf[10];										//buffer returned message is written to
 	
 	//convert Message to string
 	std::string newmsg;
@@ -160,19 +159,21 @@ void Publish(uint8_t* Message, uint8_t len, std::string topic){
 	std::string ATmsg = "AT+QMTPUBEX=0,1000,1,0,"+topic+","+to_string(newmsg.length());	//Why was there a +1
 	std::string toJSON = "{\"UID:\""+UID+",\"Payload\":"+newmsg+"}";
 	
+	//Setup recieve
+	receiveSetup(rcvbuf, 10, 'm');
 	//transmit AT message
 	if (HAL_UART_Transmit(&huart2, (uint8_t*)string2char(ATmsg), sizeof(ATmsg), 100) != HAL_OK)
 	{
 		transmitErrorHandler(string2char(ATmsg));
 	}
 	//HAL_Delay(500);
-	
+	int i = receiveComplete(); //Wait for finish, get length of buff
 	//check received message. If unsuccessful or receive no ">", go to error handler
-	if (HAL_UART_Receive(&huart2,(uint8_t*)rcvbuf,3,10000) != HAL_OK)
+	if (i < 3)
 	{
 		receiveErrorHandler();
 	}
-	if (rcvbuf[0] != success[0] || rcvbuf[1] != success[1] || rcvbuf[2] != success[2]){
+	if (rcvbuf[i-3] != '>'){	//Get 3rd to last char
 		receiveErrorHandler();
 	}
 	
@@ -191,42 +192,22 @@ uint8_t getNextMsg(uint8_t* CANMessage){
 }
 
 
-bool messageReceived(uint8_t* msgbuf){
+bool messageReceived(char * msgbuf){
 	char ATbufcheck[] = "AT+QMTRECV=0,0";	//Consider deleting ,0
-	for(int i = 0; i < 100; i++){
-		msgbuf[i] = 0;
-	}
-	char msgEnd[] = "4";	//Lines end in \0
-	char msgOK[] = "\0\n0";	//Text terminated by \0\n and ok = 0\0
-	uint8_t rcvbuf[1];
+	char msgEnd = '4';
+	char msgOK = '0';
 	
-	//transmit message
-	if (HAL_UART_Transmit(&huart2, (uint8_t*)ATbufcheck, sizeof(ATbufcheck), 100) != HAL_OK)
-	{
-		transmitErrorHandler(ATbufcheck);
-	}
-	//HAL_Delay(500);
+	uint8_t i = uartTransmit(ATbufcheck, sizeof(ATbufcheck), msgbuf, 20);
 	
-	//check received message. If unsuccessful or receive no "OK", go to error handler
-	uint8_t i = 0;
-	while(msgbuf[0] != msgEnd[0] || msgbuf[1] != msgEnd[1]){	// Check for Error
-		if (HAL_UART_Receive(&huart2,rcvbuf,1,10000) != HAL_OK)
-		{
-			receiveErrorHandler();
-		}
-		msgbuf[i] = rcvbuf[0];
-		if((i >= 1) && (msgbuf[i]   == msgOK[3] && msgbuf[i-1] == msgOK[2]
-								&&  msgbuf[i-2] == msgOK[1] && msgbuf[i-3] == msgOK[0])){
-			return true;
-		}
-		i++;
+	if(msgbuf[i-2] == msgOK) {
+		return true;
 	}
-	if (msgbuf[0] == msgEnd[0] && msgbuf[1] == msgEnd[1]){
+	
+	else if(msgbuf[i-2] == msgEnd) {
 		return false;
 	}
-	
-	receiveErrorHandler();
-	return false;	//Error out of bound not possible
+	//Warning other error
+	return false;
 }
 
 

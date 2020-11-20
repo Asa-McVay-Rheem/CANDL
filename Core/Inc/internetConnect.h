@@ -8,11 +8,20 @@
 void internetConnect(void);
 
 bool uartTransmit(char message[], uint8_t len);
-bool uartEchoDisable();
-bool uartEndSymbol();
+int uartTransmit(char message[], uint8_t len, char* buffer, int bufflen);
 
+void uartSetup();
+
+bool receiveSetup(char* buffin, uint8_t len, char cmode);
+int receiveComplete();
 
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
+
+	extern char commandtermination;
+	extern char* buff;
+	extern int bufflength;
+	extern int buffi;
+	extern char mode;
 
 #endif
