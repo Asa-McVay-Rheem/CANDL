@@ -118,7 +118,20 @@ void USART2_IRQHandler(void)
 //make a connection to the internet over wifi or LTE
 void internetConnect(void){
 	//Disable Echo, setup terminating char, and change response codes
-	uartSetup();
+	//uartSetup();
+	
+	MQTTSetup();
+	char testAT[] = "AT+QMTPUBEX=1,1000,1,0,\"UID/CAN\",45\r";
+	char test[] = "{\"msg_id\":\"512\",\"payload\":\"FFFFFFFFFFFFFFFF\"}\r";
+	if (HAL_UART_Transmit(&huart2, (uint8_t*)testAT, sizeof(testAT), 100) != HAL_OK)
+	{
+		transmitErrorHandler(string2char(testAT));
+	}
+	HAL_Delay(3000);
+	if (HAL_UART_Transmit(&huart2, (uint8_t*)test, sizeof(test), 100) != HAL_OK)
+	{
+		transmitErrorHandler(string2char(test));
+	}
 	
 	sendData();
 	//while(1);
@@ -140,15 +153,15 @@ void uartSetup() {
 
 //Break or stop after receiving \r or \0 depending on terminating char
 int uartTransmit(char message[], uint8_t len, char* buffer, int bufflen) {
-	if(!receiveSetup(buffer, bufflen, 'c'))
-		receiveErrorHandler();
+	//if(!receiveSetup(buffer, bufflen, 'c'))
+	//	receiveErrorHandler();
 	
 	if (HAL_UART_Transmit(&huart2, (uint8_t*)message, len, 100) != HAL_OK)
 	{
 		transmitErrorHandler(message);
 	}
-	
-	return receiveComplete();
+	return 1;
+	//return receiveComplete();
 }
 
 bool uartTransmit(char message[], uint8_t len) {

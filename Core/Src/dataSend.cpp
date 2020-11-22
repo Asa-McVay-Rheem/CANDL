@@ -90,17 +90,19 @@ uint8_t MQTTSSLSetup(){
 //Setup MQTT without SSL
 uint8_t MQTTSetup(){
 	//setup messages to send
-	char RCV[] = "AT+QMTCFG=\"recv/mode\",0,0,1";
-	char startMQTT[] = "AT+QMTOPEN=0,\"68.119.81.176\",1883";
-	std::string MQTTServerConSTRING = "AT+QMTCONN=0,\"CANDLTest\""; //[,\"" + username + "\"[,\"" + password + "\"]]";
+	char RCV[] = "AT+QMTCFG=\"recv/mode\",0,0,1\r";
+	char startMQTT[] = "AT+QMTOPEN=0,\"68.119.81.176\",1883\r";
+	std::string MQTTServerConSTRING = "AT+QMTCONN=0,\"CANDLTest\"\r"; //[,\"" + username + "\"[,\"" + password + "\"]]";
 	/// [ in example represent optional values
 	uint8_t len = MQTTServerConSTRING.length();
 	
 	//send messages
 	uartTransmit(RCV, 28);
+	HAL_Delay(1000);
 	uartTransmit(startMQTT, 34);
+	HAL_Delay(1000);
 	uartTransmit(string2char(MQTTServerConSTRING), len);
-	
+	HAL_Delay(1000);
 }
 
 
@@ -155,8 +157,21 @@ void Publish(uint8_t* Message, uint8_t len, std::string topic){
 	for(int i=0; i<len;i++){
 		newmsg += Message[i];
 	}
+	
+//	char testAT[] = "AT+QMTPUBEX=1,1000,1,0,\"UID/CAN\",45";
+//	char test[] = "{\"msg_id\":\"512\",\"payload\":\"FFFFFFFFFFFFFFFF\"}";
+//	if (HAL_UART_Transmit(&huart2, (uint8_t*)testAT, sizeof(testAT), 100) != HAL_OK)
+//	{
+//		transmitErrorHandler(string2char(testAT));
+//	}
+//	HAL_Delay(3000);
+//	if (HAL_UART_Transmit(&huart2, (uint8_t*)test, sizeof(test), 100) != HAL_OK)
+//	{
+//		transmitErrorHandler(string2char(test));
+//	}
+	
 	//form AT command and JSON message
-	std::string ATmsg = "AT+QMTPUBEX=0,1000,1,0,"+topic+","+to_string(newmsg.length());
+	std::string ATmsg = "AT+QMTPUBEX=1,1000,1,0,\""+topic+"\","+to_string(newmsg.length());
 	std::string toJSON = "{\"UID:\""+UID+",\"Payload\":"+newmsg+"}";
 	
 	//Setup recieve
