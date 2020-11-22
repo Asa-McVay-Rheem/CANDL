@@ -21,9 +21,11 @@ void internetConnect(void){
 }
 
 void uartSetup() {
+	USART2->CR1 |= USART_CR1_RXNEIE;	//Test Enable
+	uart2mode = 0;
 	char ate[] = "ATE0\r";	//Echo disable
 	uartTransmit(ate, 5);
-	commandtermination = '\0';
+	uart2commandtermination = '\0';
 	char atv[] = "ATS3=0\r";
 	uartTransmit(atv, 7);
 	char coder[] = "ATV0";
@@ -53,25 +55,25 @@ bool uartTransmit(char message[], uint8_t len) {
 }
 
 bool receiveSetup(char* buffin, uint8_t len, char cmode) {
-	if(mode != 0)		//return false if setup failed
+	if(uart2mode != 0x00 || uart2mode != 0x01)		//return false if setup failed
 		return false;
 	
-	mode = cmode;
-	buff = buffin;
-	buffi = 0;
-	bufflength = len;
+	uart2mode = cmode;
+	uart2buff = buffin;
+	uart2buffi = 0;
+	uart2bufflength = len;
 	
 	return true;
 }
 
 int receiveComplete() {
-	while(mode != 0 || mode != 1)	//Wait for completion
+	while(uart2mode != 0x00 || uart2mode != 0x01)	//Wait for completion
 		osDelay(10);
 	
-	if (mode == 1)
+	if (uart2mode == 1)
 		return -1;
 	
-	return buffi;
+	return uart2buffi;
 	
 }
 

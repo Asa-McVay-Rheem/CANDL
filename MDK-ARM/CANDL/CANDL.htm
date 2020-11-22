@@ -3,7 +3,7 @@
 <title>Static Call Graph - [CANDL\CANDL.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image CANDL\CANDL.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Nov 19 23:39:52 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Nov 21 22:01:24 2020
 <BR><P>
 <H3>Maximum Stack Usage =       1372 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -2799,6 +2799,7 @@ Global Symbols
 <LI><a href="#[20a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndRxTransfer
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
 </UL>
 
 <P><STRONG><a name="[20f]"></a>HAL_UART_Init</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, stm32l4xx_hal_uart.o(i.HAL_UART_Init))
@@ -3222,7 +3223,11 @@ Global Symbols
 <LI><a href="#[213]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_CheckIdleState
 </UL>
 
-<P><STRONG><a name="[4d]"></a>USART2_IRQHandler</STRONG> (Thumb, 486 bytes, Stack size 0 bytes, stm32l4xx_it.o(i.USART2_IRQHandler))
+<P><STRONG><a name="[4d]"></a>USART2_IRQHandler</STRONG> (Thumb, 498 bytes, Stack size 8 bytes, stm32l4xx_it.o(i.USART2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = USART2_IRQHandler &rArr; HAL_UART_IRQHandler &rArr; HAL_DMA_Abort_IT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[209]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+</UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l433xx.o(RESET)
 </UL>
 <P><STRONG><a name="[4e]"></a>USART3_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, stm32l4xx_it.o(i.USART3_IRQHandler))
@@ -3249,7 +3254,7 @@ Global Symbols
 <LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Publish(unsigned char*, unsigned char, std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;)
 </UL>
 
-<P><STRONG><a name="[240]"></a>receiveSetup(char*, unsigned char, char)</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, internetconnect.o(i._Z12receiveSetupPchc))
+<P><STRONG><a name="[240]"></a>receiveSetup(char*, unsigned char, char)</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, internetconnect.o(i._Z12receiveSetupPchc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = receiveSetup(char*, unsigned char, char)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartTransmit(char*, unsigned char, char*, int)
@@ -3435,11 +3440,12 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main_1.o(.constdata)
 </UL>
-<P><STRONG><a name="[264]"></a>Subscribe(std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;)</STRONG> (Thumb, 80 bytes, Stack size 40 bytes, datasend.o(i._Z9SubscribeSs))
-<BR><BR>[Stack]<UL><LI>Max Depth = 860 + Unknown Stack Size
-<LI>Call Chain = Subscribe(std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;) &rArr; std::basic_string&lang;T1, T2, T3&rang; std::operator +&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;(const T1*, const std::basic_string&lang;T1, T2, T3&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::operator +=(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::append(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::append(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&, unsigned, unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
+<P><STRONG><a name="[264]"></a>Subscribe(std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;)</STRONG> (Thumb, 132 bytes, Stack size 48 bytes, datasend.o(i._Z9SubscribeSs))
+<BR><BR>[Stack]<UL><LI>Max Depth = 884 + Unknown Stack Size
+<LI>Call Chain = Subscribe(std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;) &rArr; std::basic_string&lang;T1, T2, T3&rang; std::operator +&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;(const std::basic_string&lang;T1, T2, T3&rang;&, const std::basic_string&lang;T1, T2, T3&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::operator +=(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::append(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::append(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&, unsigned, unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
 <BR>[Calls]<UL><LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartTransmit(char*, unsigned char)
+<LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;T1, T2, T3&rang; std::operator +&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;(const std::basic_string&lang;T1, T2, T3&rang;&, const std::basic_string&lang;T1, T2, T3&rang;&)
 <LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;T1, T2, T3&rang; std::operator +&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;(const std::basic_string&lang;T1, T2, T3&rang;&, const T1*)
 <LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;T1, T2, T3&rang; std::operator +&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;(const T1*, const std::basic_string&lang;T1, T2, T3&rang;&)
 <LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::length() const
@@ -3470,7 +3476,7 @@ Global Symbols
 <LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Publish(unsigned char*, unsigned char, std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;)
 </UL>
 
-<P><STRONG><a name="[245]"></a>uartSetup()</STRONG> (Thumb, 62 bytes, Stack size 32 bytes, internetconnect.o(i._Z9uartSetupv))
+<P><STRONG><a name="[245]"></a>uartSetup()</STRONG> (Thumb, 80 bytes, Stack size 32 bytes, internetconnect.o(i._Z9uartSetupv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = uartSetup() &rArr; uartTransmit(char*, unsigned char) &rArr; uartTransmit(char*, unsigned char, char*, int) &rArr; receiveComplete() &rArr; osDelay &rArr; vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartTransmit(char*, unsigned char)
@@ -6804,6 +6810,7 @@ Global Symbols
 <LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::basic_string(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendData()
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Subscribe(std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;)
 <LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Publish(unsigned char*, unsigned char, std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;)
 </UL>
 

@@ -17,11 +17,11 @@ int receiveComplete();
 
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
-
-	extern char commandtermination;
-	extern char* buff;
-	extern int bufflength;
-	extern int buffi;
-	extern char mode;
+/*
+	extern char uart2commandtermination;
+	extern char* uart2buff;
+	extern int uart2bufflength;
+	extern int uart2buffi;
+	extern char uart2mode;*/
 
 #endif

@@ -28,11 +28,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-	 static char commandtermination = '\r';	//line termination char
-	 static char* buff;						//Pointer to buffer
-	 static int bufflength = 0;		//Initial buffer size
-	 static int buffi = 0;				//Return buffer size
-	 static char mode = 0;	//Specifiy Mode of operation
+	 static char uart2commandtermination = '\r';	//line termination char
+	 static char* uart2buff;						//Pointer to buffer
+	 static int uart2bufflength = 0;		//Initial buffer size
+	 static int uart2buffi = 0;				//Return buffer size
+	 static char uart2mode = 0;	//Specifiy Mode of operation
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
