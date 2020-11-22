@@ -152,7 +152,23 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>58</LineNumber>
+          <LineNumber>179</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134255672</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>..\Core\Src\internetConnect.cpp</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\CANDL\../Core/Src/internetConnect.cpp\179</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>164</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134255392</Address>
           <ByteObject>0</ByteObject>
@@ -163,41 +179,36 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\Core\Src\internetConnect.cpp</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\CANDL\../Core/Src/internetConnect.cpp\58</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>42</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134255526</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Core\Src\internetConnect.cpp</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\CANDL\../Core/Src/internetConnect.cpp\42</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>38</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134255508</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Core\Src\internetConnect.cpp</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\CANDL\../Core/Src/internetConnect.cpp\38</Expression>
+          <Expression>\\CANDL\../Core/Src/internetConnect.cpp\164</Expression>
         </Bp>
       </Breakpoint>
+      <WatchWindow1>
+        <Ww>
+          <count>0</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>uart2mode</ItemText>
+        </Ww>
+        <Ww>
+          <count>1</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>uart2buffi</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>uart2bufflength</ItemText>
+        </Ww>
+        <Ww>
+          <count>3</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>uart2buff</ItemText>
+        </Ww>
+        <Ww>
+          <count>4</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>uart2commandtermination</ItemText>
+        </Ww>
+      </WatchWindow1>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>

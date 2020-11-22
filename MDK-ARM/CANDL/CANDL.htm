@@ -3,7 +3,7 @@
 <title>Static Call Graph - [CANDL\CANDL.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image CANDL\CANDL.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Nov 21 22:01:24 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun Nov 22 15:25:49 2020
 <BR><P>
 <H3>Maximum Stack Usage =       1372 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -110,7 +110,7 @@ Function Pointers
  <LI><a href="#[66]">TSC_IRQHandler</a> from startup_stm32l433xx.o(.text) referenced from startup_stm32l433xx.o(RESET)
  <LI><a href="#[7a]">UART_DMAAbortOnError</a> from stm32l4xx_hal_uart.o(i.UART_DMAAbortOnError) referenced from stm32l4xx_hal_uart.o(i.HAL_UART_IRQHandler)
  <LI><a href="#[4c]">USART1_IRQHandler</a> from startup_stm32l433xx.o(.text) referenced from startup_stm32l433xx.o(RESET)
- <LI><a href="#[4d]">USART2_IRQHandler</a> from stm32l4xx_it.o(i.USART2_IRQHandler) referenced from startup_stm32l433xx.o(RESET)
+ <LI><a href="#[4d]">USART2_IRQHandler</a> from internetconnect.o(i.USART2_IRQHandler) referenced from startup_stm32l433xx.o(RESET)
  <LI><a href="#[4e]">USART3_IRQHandler</a> from stm32l4xx_it.o(i.USART3_IRQHandler) referenced from startup_stm32l433xx.o(RESET)
  <LI><a href="#[5d]">USB_IRQHandler</a> from startup_stm32l433xx.o(.text) referenced from startup_stm32l433xx.o(RESET)
  <LI><a href="#[24]">UsageFault_Handler</a> from stm32l4xx_it.o(i.UsageFault_Handler) referenced from startup_stm32l433xx.o(RESET)
@@ -168,7 +168,7 @@ Function Pointers
  <LI><a href="#[b7]">std::numpunct&lang;char&rang;::do_thousands_sep() const</a> from char.o(t._ZNKSt8numpunctIcE16do_thousands_sepEv) referenced from main_1.o(.constdata__ZTVSt8numpunctIcE)
  <LI><a href="#[7b]">std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()</a> from char.o(t._ZNSsD1Ev) referenced from locale.o(i._ZN4__rw15__rw_locale_impC1EPKcjj)
  <LI><a href="#[7b]">std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()</a> from char.o(t._ZNSsD1Ev) referenced from datasend.o(i.__sti___12_dataSend_cpp_UID)
- <LI><a href="#[7b]">std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()</a> from char.o(t._ZNSsD1Ev) referenced from internetconnect.o(i.__sti___19_internetConnect_cpp_55b609d8)
+ <LI><a href="#[7b]">std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()</a> from char.o(t._ZNSsD1Ev) referenced from internetconnect.o(i.__sti___19_internetConnect_cpp_9f04abf8)
  <LI><a href="#[7b]">std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()</a> from char.o(t._ZNSsD1Ev) referenced from main_1.o(i.__sti___8_main_cpp_main)
  <LI><a href="#[7b]">std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()</a> from char.o(t._ZNSsD1Ev) referenced from ios.o(t._ZN4__rw18__rw_locale_vectorISsED1Ev)
  <LI><a href="#[9b]">std::ctype_byname&lang;char&rang;::~ctype_byname__deallocating()</a> from char.o(i._ZNSt12ctype_bynameIcED0Ev) referenced from char.o(.constdata__ZTVSt12ctype_bynameIcE)
@@ -214,7 +214,7 @@ Function Pointers
  <LI><a href="#[cd]">std::num_put&lang;char, std::ostreambuf_iterator&lang;char, std::char_traits&lang;char&rang;&rang;&rang;::~num_put__deallocating()</a> from datasend.o(i._ZNSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEED0Ev) referenced from datasend.o(.constdata__ZTVSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE)
  <LI><a href="#[cc]">std::num_put&lang;char, std::ostreambuf_iterator&lang;char, std::char_traits&lang;char&rang;&rang;&rang;::~num_put()</a> from datasend.o(i._ZNSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEED1Ev) referenced from datasend.o(.constdata__ZTVSt7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE)
  <LI><a href="#[82]">std::ios_base::Init::~Init()</a> from ios.o(i._ZNSt8ios_base4InitD1Ev) referenced from datasend.o(i.__sti___12_dataSend_cpp_UID)
- <LI><a href="#[82]">std::ios_base::Init::~Init()</a> from ios.o(i._ZNSt8ios_base4InitD1Ev) referenced from internetconnect.o(i.__sti___19_internetConnect_cpp_55b609d8)
+ <LI><a href="#[82]">std::ios_base::Init::~Init()</a> from ios.o(i._ZNSt8ios_base4InitD1Ev) referenced from internetconnect.o(i.__sti___19_internetConnect_cpp_9f04abf8)
  <LI><a href="#[82]">std::ios_base::Init::~Init()</a> from ios.o(i._ZNSt8ios_base4InitD1Ev) referenced from main_1.o(i.__sti___8_main_cpp_main)
  <LI><a href="#[cf]">std::ios_base::~ios_base()</a> from ios.o(i._ZNSt8ios_baseD1Ev) referenced from datasend.o(.constdata__ZTVSt8ios_base)
  <LI><a href="#[d1]">std::messages&lang;char&rang;::~messages__deallocating()</a> from rwstdexcept.o(i._ZNSt8messagesIcED0Ev) referenced from rwstdexcept.o(.constdata__ZTVSt8messagesIcE)
@@ -229,7 +229,7 @@ Function Pointers
  <LI><a href="#[db]">__sti___10_locale_cpp_ff99fc7b</a> from locale.o(i.__sti___10_locale_cpp_ff99fc7b) referenced from locale.o(.init_array)
  <LI><a href="#[dc]">__sti___10_rwcats_cpp_64e8068e</a> from rwcats.o(i.__sti___10_rwcats_cpp_64e8068e) referenced from rwcats.o(.init_array)
  <LI><a href="#[d9]">__sti___12_dataSend_cpp_UID</a> from datasend.o(i.__sti___12_dataSend_cpp_UID) referenced from datasend.o(.init_array)
- <LI><a href="#[d8]">__sti___19_internetConnect_cpp_55b609d8</a> from internetconnect.o(i.__sti___19_internetConnect_cpp_55b609d8) referenced from internetconnect.o(.init_array)
+ <LI><a href="#[d8]">__sti___19_internetConnect_cpp_9f04abf8</a> from internetconnect.o(i.__sti___19_internetConnect_cpp_9f04abf8) referenced from internetconnect.o(.init_array)
  <LI><a href="#[da]">__sti___8_char_cpp_a3dc957a</a> from char.o(i.__sti___8_char_cpp_a3dc957a) referenced from char.o(.init_array)
  <LI><a href="#[d7]">__sti___8_main_cpp_main</a> from main_1.o(i.__sti___8_main_cpp_main) referenced from main_1.o(.init_array)
  <LI><a href="#[6d]">_get_lc_ctype</a> from lc_ctype_c.o(locale$$code) referenced from rt_ctype_table.o(.text)
@@ -832,7 +832,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___8_main_cpp_main
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___12_dataSend_cpp_UID
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___19_internetConnect_cpp_55b609d8
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___19_internetConnect_cpp_9f04abf8
 <LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_get_cats()
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_rwcats_cpp_64e8068e
 <LI><a href="#[294]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::classic()
@@ -852,11 +852,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[12c]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::char_traits&lang;char&rang;::copy(char*, const char*, unsigned)
+<BR><BR>[Called By]<UL><LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+<LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
+<LI><a href="#[29d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::char_traits&lang;char&rang;::copy(char*, const char*, unsigned)
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::do_widen(const char*, const char*, char*) const
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memmove
-<LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
-<LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
 <LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcpy
 <LI><a href="#[19c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwrite
 </UL>
@@ -1227,8 +1227,8 @@ Global Symbols
 <LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_write
 </UL>
 <BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fflush
-<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__flsbuf
 <LI><a href="#[19c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwrite
+<LI><a href="#[198]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__flsbuf
 </UL>
 
 <P><STRONG><a name="[123]"></a>_fflush</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, stdio.o(.text))
@@ -1934,8 +1934,8 @@ Global Symbols
 <P><STRONG><a name="[19d]"></a>__flsbuf_byte</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, flsbuf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __flsbuf_byte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
-<LI><a href="#[19c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwrite
+<BR>[Called By]<UL><LI><a href="#[19c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwrite
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
 <P><STRONG><a name="[3bd]"></a>__flsbuf_wide</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, flsbuf.o(.text), UNUSED)
@@ -2798,8 +2798,8 @@ Global Symbols
 <LI><a href="#[20e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndTransmit_IT
 <LI><a href="#[20a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_EndRxTransfer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
-<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
 </UL>
 
 <P><STRONG><a name="[20f]"></a>HAL_UART_Init</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, stm32l4xx_hal_uart.o(i.HAL_UART_Init))
@@ -3223,7 +3223,7 @@ Global Symbols
 <LI><a href="#[213]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_CheckIdleState
 </UL>
 
-<P><STRONG><a name="[4d]"></a>USART2_IRQHandler</STRONG> (Thumb, 498 bytes, Stack size 8 bytes, stm32l4xx_it.o(i.USART2_IRQHandler))
+<P><STRONG><a name="[4d]"></a>USART2_IRQHandler</STRONG> (Thumb, 498 bytes, Stack size 8 bytes, internetconnect.o(i.USART2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = USART2_IRQHandler &rArr; HAL_UART_IRQHandler &rArr; HAL_DMA_Abort_IT
 </UL>
 <BR>[Calls]<UL><LI><a href="#[209]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
@@ -3303,7 +3303,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendData()
 </UL>
 
-<P><STRONG><a name="[243]"></a>receiveComplete()</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, internetconnect.o(i._Z15receiveCompletev))
+<P><STRONG><a name="[243]"></a>receiveComplete()</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, internetconnect.o(i._Z15receiveCompletev))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = receiveComplete() &rArr; osDelay &rArr; vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
@@ -3476,7 +3476,7 @@ Global Symbols
 <LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Publish(unsigned char*, unsigned char, std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;)
 </UL>
 
-<P><STRONG><a name="[245]"></a>uartSetup()</STRONG> (Thumb, 80 bytes, Stack size 32 bytes, internetconnect.o(i._Z9uartSetupv))
+<P><STRONG><a name="[245]"></a>uartSetup()</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, internetconnect.o(i._Z9uartSetupv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = uartSetup() &rArr; uartTransmit(char*, unsigned char) &rArr; uartTransmit(char*, unsigned char, char*, int) &rArr; receiveComplete() &rArr; osDelay &rArr; vTaskDelay &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartTransmit(char*, unsigned char)
@@ -4506,7 +4506,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___8_main_cpp_main
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___12_dataSend_cpp_UID
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___19_internetConnect_cpp_55b609d8
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___19_internetConnect_cpp_9f04abf8
 </UL>
 
 <P><STRONG><a name="[3e3]"></a>std::ios_base::Init::Init__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 40 bytes, ios.o(i._ZNSt8ios_base4InitC1Ev), UNUSED)
@@ -4517,7 +4517,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[2c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_streambuf&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;::pubsetbuf(wchar_t*, long)
 <LI><a href="#[2c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_streambuf&lang;char, std::char_traits&lang;char&rang;&rang;::pubsetbuf(char*, long)
 </UL>
-<BR>[Address Reference Count : 3]<UL><LI> internetconnect.o(i.__sti___19_internetConnect_cpp_55b609d8)
+<BR>[Address Reference Count : 3]<UL><LI> internetconnect.o(i.__sti___19_internetConnect_cpp_9f04abf8)
 <LI> main_1.o(i.__sti___8_main_cpp_main)
 <LI> datasend.o(i.__sti___12_dataSend_cpp_UID)
 </UL>
@@ -4993,29 +4993,29 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[2ec]"></a>vPortEnterCritical</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, port.o(i.vPortEnterCritical))
-<BR><BR>[Called By]<UL><LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<BR><BR>[Called By]<UL><LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[2fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
+<LI><a href="#[2fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
+<LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[2ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
 <LI><a href="#[2eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddNewTaskToReadyList
 <LI><a href="#[30e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
 <LI><a href="#[2e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
 <LI><a href="#[2e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
 <LI><a href="#[2f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
-<LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
-<LI><a href="#[2fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
-<LI><a href="#[2fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
 </UL>
 
 <P><STRONG><a name="[2ee]"></a>vPortExitCritical</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, port.o(i.vPortExitCritical))
-<BR><BR>[Called By]<UL><LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<BR><BR>[Called By]<UL><LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[2fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
+<LI><a href="#[2fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
+<LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[2ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCheckTasksWaitingTermination
 <LI><a href="#[2eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvAddNewTaskToReadyList
 <LI><a href="#[30e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
 <LI><a href="#[2e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
 <LI><a href="#[2e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
 <LI><a href="#[2f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
-<LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
-<LI><a href="#[2fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
-<LI><a href="#[2fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
 </UL>
 
 <P><STRONG><a name="[2f4]"></a>vPortFree</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, heap_4.o(i.vPortFree))
@@ -5108,8 +5108,8 @@ Global Symbols
 <P><STRONG><a name="[2df]"></a>xQueueGenericCreate</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, queue.o(i.xQueueGenericCreate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = xQueueGenericCreate &rArr; pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[300]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
-<LI><a href="#[2f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewQueue
+<BR>[Calls]<UL><LI><a href="#[2f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInitialiseNewQueue
+<LI><a href="#[300]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pvPortMalloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[232]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageCreate
 </UL>
@@ -5136,7 +5136,10 @@ Global Symbols
 <P><STRONG><a name="[2e3]"></a>xQueueGenericSend</STRONG> (Thumb, 420 bytes, Stack size 56 bytes, queue.o(i.xQueueGenericSend))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = xQueueGenericSend &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<BR>[Calls]<UL><LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[2fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
+<LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+<LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[2d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetSchedulerState
 <LI><a href="#[301]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
 <LI><a href="#[2ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
@@ -5145,9 +5148,6 @@ Global Symbols
 <LI><a href="#[30e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
 <LI><a href="#[307]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
 <LI><a href="#[30d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskInternalSetTimeOutState
-<LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
-<LI><a href="#[2fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueFull
-<LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessagePut
 </UL>
@@ -5155,9 +5155,9 @@ Global Symbols
 <P><STRONG><a name="[2e2]"></a>xQueueGenericSendFromISR</STRONG> (Thumb, 248 bytes, Stack size 40 bytes, queue.o(i.xQueueGenericSendFromISR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = xQueueGenericSendFromISR &rArr; prvCopyDataToQueue &rArr; xTaskPriorityDisinherit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<BR>[Calls]<UL><LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+<LI><a href="#[2fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
 <LI><a href="#[305]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortValidateInterruptPriority
-<LI><a href="#[2f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessagePut
 </UL>
@@ -5165,7 +5165,10 @@ Global Symbols
 <P><STRONG><a name="[2e1]"></a>xQueueReceive</STRONG> (Thumb, 356 bytes, Stack size 48 bytes, queue.o(i.xQueueReceive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = xQueueReceive &rArr; vTaskPlaceOnEventList &rArr; prvAddCurrentTaskToDelayedList &rArr; vListInsert
 </UL>
-<BR>[Calls]<UL><LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<BR>[Calls]<UL><LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[2fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
+<LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
+<LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[2d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetSchedulerState
 <LI><a href="#[301]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
 <LI><a href="#[2ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
@@ -5174,19 +5177,16 @@ Global Symbols
 <LI><a href="#[30e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCheckForTimeOut
 <LI><a href="#[307]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskPlaceOnEventList
 <LI><a href="#[30d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskInternalSetTimeOutState
-<LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
-<LI><a href="#[2fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
-<LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
 </UL>
 <BR>[Called By]<UL><LI><a href="#[233]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageGet
 </UL>
 
 <P><STRONG><a name="[2e0]"></a>xQueueReceiveFromISR</STRONG> (Thumb, 202 bytes, Stack size 40 bytes, queue.o(i.xQueueReceiveFromISR))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = xQueueReceiveFromISR &rArr; xTaskRemoveFromEventList
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = xQueueReceiveFromISR &rArr; prvCopyDataFromQueue
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
+<BR>[Calls]<UL><LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
+<LI><a href="#[2fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskRemoveFromEventList
 <LI><a href="#[305]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortValidateInterruptPriority
-<LI><a href="#[2f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
 </UL>
 <BR>[Called By]<UL><LI><a href="#[233]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageGet
 </UL>
@@ -5267,12 +5267,12 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[2e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vListInsertEnd
 <LI><a href="#[2e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceiveFromISR
+<BR>[Called By]<UL><LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
+<LI><a href="#[2e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceiveFromISR
 <LI><a href="#[2e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueReceive
 <LI><a href="#[2e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSendFromISR
 <LI><a href="#[2e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericSend
 <LI><a href="#[2f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericReset
-<LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvUnlockQueue
 </UL>
 
 <P><STRONG><a name="[304]"></a>xTaskResumeAll</STRONG> (Thumb, 224 bytes, Stack size 16 bytes, tasks.o(i.xTaskResumeAll))
@@ -6041,7 +6041,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___8_main_cpp_main
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___12_dataSend_cpp_UID
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___19_internetConnect_cpp_55b609d8
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___19_internetConnect_cpp_9f04abf8
 <LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;T1, T2, T3&rang; std::operator +&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;(const T1*, const std::basic_string&lang;T1, T2, T3&rang;&)
 <LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MQTTSetup()
 <LI><a href="#[29b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::name() const
@@ -6135,7 +6135,7 @@ Global Symbols
 <LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list)
 <LI><a href="#[279]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_locale_imp::__rw_locale_imp(const char*, unsigned, unsigned)
 </UL>
-<BR>[Address Reference Count : 5]<UL><LI> internetconnect.o(i.__sti___19_internetConnect_cpp_55b609d8)
+<BR>[Address Reference Count : 5]<UL><LI> internetconnect.o(i.__sti___19_internetConnect_cpp_9f04abf8)
 <LI> main_1.o(i.__sti___8_main_cpp_main)
 <LI> datasend.o(i.__sti___12_dataSend_cpp_UID)
 <LI> locale.o(i._ZN4__rw15__rw_locale_impC1EPKcjj)
@@ -7033,9 +7033,9 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main_1.o(.init_array)
 </UL>
-<P><STRONG><a name="[d8]"></a>__sti___19_internetConnect_cpp_55b609d8</STRONG> (Thumb, 180 bytes, Stack size 40 bytes, internetconnect.o(i.__sti___19_internetConnect_cpp_55b609d8))
+<P><STRONG><a name="[d8]"></a>__sti___19_internetConnect_cpp_9f04abf8</STRONG> (Thumb, 180 bytes, Stack size 40 bytes, internetconnect.o(i.__sti___19_internetConnect_cpp_9f04abf8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 860 + Unknown Stack Size
-<LI>Call Chain = __sti___19_internetConnect_cpp_55b609d8 &rArr; std::ios_base::Init::Init() &rArr; std::basic_ostream&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;::basic_ostream(std::basic_streambuf&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;*) &rArr; std::basic_ios&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;::init(std::basic_streambuf&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;*) &rArr; std::locale::_C_use_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const &rArr; std::locale::_C_make_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
+<LI>Call Chain = __sti___19_internetConnect_cpp_9f04abf8 &rArr; std::ios_base::Init::Init() &rArr; std::basic_ostream&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;::basic_ostream(std::basic_streambuf&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;*) &rArr; std::basic_ios&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;::init(std::basic_streambuf&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;*) &rArr; std::locale::_C_use_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const &rArr; std::locale::_C_make_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ios_base::Init::Init()
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit

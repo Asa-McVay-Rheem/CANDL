@@ -19,7 +19,7 @@ extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
 /*
 	extern char uart2commandtermination;
-	extern char* uart2buff;
+	extern char * uart2buff;
 	extern int uart2bufflength;
 	extern int uart2buffi;
 	extern char uart2mode;*/
