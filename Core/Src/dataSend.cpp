@@ -92,16 +92,16 @@ uint8_t MQTTSetup(){
 	//setup messages to send
 	char RCV[] = "AT+QMTCFG=\"recv/mode\",0,0,1\r";
 	char startMQTT[] = "AT+QMTOPEN=0,\"68.119.81.176\",1883\r";
-	std::string MQTTServerConSTRING = "AT+QMTCONN=0,\"CANDLTest\"\r"; //[,\"" + username + "\"[,\"" + password + "\"]]";
+	char MQTTServerConSTRING[] = "AT+QMTCONN=0,\"CANDLTest\"\r"; //[,\"" + username + "\"[,\"" + password + "\"]]";
 	/// [ in example represent optional values
-	uint8_t len = MQTTServerConSTRING.length();
+	//uint8_t len = MQTTServerConSTRING.length();
 	
 	//send messages
 	uartTransmit(RCV, 28);
 	HAL_Delay(1000);
 	uartTransmit(startMQTT, 34);
 	HAL_Delay(1000);
-	uartTransmit(string2char(MQTTServerConSTRING), len);
+	uartTransmit (MQTTServerConSTRING, sizeof(MQTTServerConSTRING));
 	HAL_Delay(1000);
 }
 

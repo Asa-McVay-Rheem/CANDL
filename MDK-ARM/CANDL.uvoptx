@@ -152,9 +152,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>135</LineNumber>
+          <LineNumber>136</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134255660</Address>
+          <Address>134255604</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -163,14 +163,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\Core\Src\internetConnect.cpp</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\CANDL\../Core/Src/internetConnect.cpp\135</Expression>
+          <Expression>\\CANDL\../Core/Src/internetConnect.cpp\136</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>242</LineNumber>
+          <LineNumber>264</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134255040</Address>
+          <Address>134256206</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -179,14 +179,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\Core\Src\dataSend.cpp</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\CANDL\../Core/Src/dataSend.cpp\242</Expression>
+          <Expression>\\CANDL\../Core/Src/dataSend.cpp\264</Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
-          <LineNumber>262</LineNumber>
+          <LineNumber>257</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134256262</Address>
+          <Address>134256210</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -195,14 +195,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\Core\Src\dataSend.cpp</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\CANDL\../Core/Src/dataSend.cpp\262</Expression>
+          <Expression>\\CANDL\../Core/Src/dataSend.cpp\257</Expression>
         </Bp>
         <Bp>
           <Number>3</Number>
           <Type>0</Type>
-          <LineNumber>255</LineNumber>
+          <LineNumber>174</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134256266</Address>
+          <Address>134256358</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -211,28 +211,28 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>..\Core\Src\dataSend.cpp</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\CANDL\../Core/Src/dataSend.cpp\255</Expression>
+          <Expression>\\CANDL\../Core/Src/dataSend.cpp\174</Expression>
         </Bp>
         <Bp>
           <Number>4</Number>
           <Type>0</Type>
-          <LineNumber>172</LineNumber>
+          <LineNumber>125</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134256414</Address>
+          <Address>134255546</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\Core\Src\dataSend.cpp</Filename>
+          <Filename>..\Core\Src\internetConnect.cpp</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\CANDL\../Core/Src/dataSend.cpp\172</Expression>
+          <Expression>\\CANDL\../Core/Src/internetConnect.cpp\125</Expression>
         </Bp>
         <Bp>
           <Number>5</Number>
           <Type>0</Type>
-          <LineNumber>174</LineNumber>
+          <LineNumber>137</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -241,78 +241,14 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\Core\Src\dataSend.cpp</Filename>
+          <Filename>..\Core\Src\internetConnect.cpp</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>6</Number>
           <Type>0</Type>
-          <LineNumber>244</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\Core\Src\dataSend.cpp</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>7</Number>
-          <Type>0</Type>
-          <LineNumber>251</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\Core\Src\dataSend.cpp</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>8</Number>
-          <Type>0</Type>
-          <LineNumber>257</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\Core\Src\dataSend.cpp</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>9</Number>
-          <Type>0</Type>
-          <LineNumber>264</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\Core\Src\dataSend.cpp</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>10</Number>
-          <Type>0</Type>
-          <LineNumber>136</LineNumber>
+          <LineNumber>138</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
