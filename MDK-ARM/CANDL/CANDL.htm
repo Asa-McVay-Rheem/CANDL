@@ -3,7 +3,7 @@
 <title>Static Call Graph - [CANDL\CANDL.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image CANDL\CANDL.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun Nov 22 17:02:22 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Nov 23 13:38:08 2020
 <BR><P>
 <H3>Maximum Stack Usage =       1524 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -784,10 +784,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[106]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[29a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
-<LI><a href="#[299]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::char_traits&lang;char&rang;::copy(char*, const char*, unsigned)
+<BR><BR>[Called By]<UL><LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::char_traits&lang;char&rang;::copy(char*, const char*, unsigned)
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memmove
+<LI><a href="#[29a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataToQueue
+<LI><a href="#[299]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvCopyDataFromQueue
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcpy
 <LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fwrite
 </UL>
@@ -2193,9 +2193,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_CAN_MspInit &rArr; HAL_NVIC_SetPriority &rArr; __NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[1a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
 <LI><a href="#[1a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_Init
 </UL>
@@ -2681,9 +2681,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = HAL_UART_MspInit &rArr; HAL_NVIC_SetPriority &rArr; __NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[1a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SetPriority
 <LI><a href="#[1a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_EnableIRQ
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
@@ -3071,8 +3071,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
 <LI><a href="#[1b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK1Freq
-<LI><a href="#[1ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK2Freq
 <LI><a href="#[20c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[1ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetPCLK2Freq
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
@@ -3212,8 +3212,8 @@ Global Symbols
 <LI><a href="#[22b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_exception::_C_vformat(int, std::__va_list)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_allocate(unsigned, int)
-<LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_make_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const
 <LI><a href="#[2c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::_C_getRep(unsigned, unsigned)
+<LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_make_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const
 <LI><a href="#[2c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned, unsigned, unsigned)
 </UL>
 
@@ -3260,8 +3260,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[93]"></a>__rw::__rw_facet_base::_C_initfacet(const std::locale&)</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, datasend.o(i._ZN4__rw15__rw_facet_base12_C_initfacetERKSt6locale))
-<BR>[Address Reference Count : 5]<UL><LI> datasend.o(.constdata__ZTVNSt6locale5facetE)
-<LI> rwstdexcept.o(.constdata__ZTVSt8messagesIcE)
+<BR>[Address Reference Count : 5]<UL><LI> rwstdexcept.o(.constdata__ZTVSt8messagesIcE)
+<LI> datasend.o(.constdata__ZTVNSt6locale5facetE)
 <LI> ios.o(.constdata__ZTVSt5ctypeIwE)
 <LI> ios.o(.constdata__ZTVSt7codecvtIccSt11__mbstate_tE)
 <LI> ios.o(.constdata__ZTVSt7codecvtIwcSt11__mbstate_tE)
@@ -3306,9 +3306,9 @@ Global Symbols
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setlocale
 <LI><a href="#[223]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new[] (unsigned)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::ctype_byname(const char*, unsigned)
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::_C_initfacet(const std::locale&)
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::_C_initfacet(const std::locale&)
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*)
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::ctype_byname(const char*, unsigned)
 <LI><a href="#[23b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_messages_base::_C_cat_open(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&, const std::locale&) const
 </UL>
 
@@ -3320,9 +3320,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setlocale
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator delete[] (void*)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::ctype_byname(const char*, unsigned)
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::_C_initfacet(const std::locale&)
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::_C_initfacet(const std::locale&)
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*)
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::ctype_byname(const char*, unsigned)
 <LI><a href="#[23b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_messages_base::_C_cat_open(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&, const std::locale&) const
 </UL>
 
@@ -3356,9 +3356,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 916 + Unknown Stack Size
 <LI>Call Chain = std::__rw_messages_base::_C_cat_open(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&, const std::locale&) const &rArr; __rw::__rw_locale_vector&lang;std::__rw_open_cat_data&rang;::resize(unsigned) &rArr; std::__rw_open_cat_data::__rw_open_cat_data() &rArr; std::locale::classic() &rArr; std::locale::locale(__rw::__rw_locale_imp*) &rArr; std::locale::_C_init() &rArr; __rw::__rw_locale_imp::__rw_locale_imp(const char*, unsigned, unsigned) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::operator =(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned, unsigned, unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
-<BR>[Calls]<UL><LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::operator =(const std::locale&)
-<LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int)
+<BR>[Calls]<UL><LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int)
 <LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::~__rw_use_c_lib_locale()
+<LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::operator =(const std::locale&)
 <LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;catopen(const char*, int)
 <LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_locale_vector&lang;std::__rw_open_cat_data&rang;::resize(unsigned)
 <LI><a href="#[23c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_get_cats()
@@ -3386,9 +3386,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[253]"></a>std::ctype&lang;char&rang;::is(std::ctype_base::mask, char) const</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, char.o(i._ZNKSt5ctypeIcE2isENSt10ctype_base4maskEc))
-<BR><BR>[Called By]<UL><LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::ctype(const std::ctype_base::mask*, bool, unsigned)
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::_C_initfacet(const std::locale&)
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::ctype(const std::ctype_base::mask*, bool, unsigned)
 <LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::ctype_byname(const char*, unsigned)
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::_C_initfacet(const std::locale&)
 </UL>
 
 <P><STRONG><a name="[97]"></a>std::ctype&lang;char&rang;::do_widen(char) const</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, char.o(i._ZNKSt5ctypeIcE8do_widenEc))
@@ -3565,11 +3565,11 @@ Global Symbols
 <P><STRONG><a name="[251]"></a>std::ctype_byname&lang;char&rang;::ctype_byname(const char*, unsigned)</STRONG> (Thumb, 280 bytes, Stack size 32 bytes, char.o(i._ZNSt12ctype_bynameIcEC1EPKcj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = std::ctype_byname&lang;char&rang;::ctype_byname(const char*, unsigned) &rArr; std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*) &rArr; __rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int) &rArr; operator new[] (unsigned) &rArr; operator new(unsigned) &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::ctype(const std::ctype_base::mask*, bool, unsigned)
-<LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int)
+<BR>[Calls]<UL><LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int)
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*)
 <LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::is(std::ctype_base::mask, char) const
 <LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::~__rw_use_c_lib_locale()
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::ctype(const std::ctype_base::mask*, bool, unsigned)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_facet_maker&lang;std::ctype&lang;char&rang;&rang;::_C_maker_func(int, const char*, unsigned)
 </UL>
@@ -3784,8 +3784,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 836 + Unknown Stack Size
 <LI>Call Chain = std::locale::classic() &rArr; std::locale::locale(__rw::__rw_locale_imp*) &rArr; std::locale::_C_init() &rArr; __rw::__rw_locale_imp::__rw_locale_imp(const char*, unsigned, unsigned) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::operator =(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned, unsigned, unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
-<BR>[Calls]<UL><LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_init()
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
+<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
+<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_init()
 <LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_guard_acquire
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::locale(__rw::__rw_locale_imp*)
 </UL>
@@ -4015,10 +4015,10 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
 </UL>
 <BR>[Called By]<UL><LI><a href="#[231]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_deallocate(void*, unsigned, int)
-<LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::operator =(const std::locale&)
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_init()
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::~ctype__deallocating()
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::~ctype_byname__deallocating()
+<LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::operator =(const std::locale&)
+<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_init()
 <LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;catopen(const char*, int)
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator delete[] (void*)
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::messages&lang;char&rang;::~messages__deallocating()
@@ -4034,9 +4034,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::ctype(const std::ctype_base::mask*, bool, unsigned)
-<LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int)
+<BR>[Called By]<UL><LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int)
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*)
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::ctype(const std::ctype_base::mask*, bool, unsigned)
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_array_new_general
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_rwcats_cpp_64e8068e
 <LI><a href="#[22b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_exception::_C_vformat(int, std::__va_list)
@@ -4295,10 +4295,10 @@ Global Symbols
 <P><STRONG><a name="[2a8]"></a>pvPortMalloc</STRONG> (Thumb, 296 bytes, Stack size 24 bytes, heap_4.o(i.pvPortMalloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = pvPortMalloc &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
-<LI><a href="#[2a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
-<LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInsertBlockIntoFreeList
+<BR>[Calls]<UL><LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInsertBlockIntoFreeList
 <LI><a href="#[2aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvHeapInit
+<LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<LI><a href="#[2a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
 </UL>
 <BR>[Called By]<UL><LI><a href="#[28e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
 <LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xQueueGenericCreate
@@ -4375,9 +4375,9 @@ Global Symbols
 <P><STRONG><a name="[29c]"></a>vPortFree</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, heap_4.o(i.vPortFree))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = vPortFree &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
-<BR>[Calls]<UL><LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
+<BR>[Calls]<UL><LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInsertBlockIntoFreeList
+<LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[2a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskSuspendAll
-<LI><a href="#[2ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvInsertBlockIntoFreeList
 </UL>
 <BR>[Called By]<UL><LI><a href="#[28e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskCreate
 <LI><a href="#[298]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvDeleteTCB
@@ -4602,8 +4602,8 @@ Global Symbols
 <LI><a href="#[290]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uxListRemove
 <LI><a href="#[2b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvResetNextTaskUnblockTime
 </UL>
-<BR>[Called By]<UL><LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
-<LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<LI><a href="#[2ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 </UL>
 
 <P><STRONG><a name="[29b]"></a>xTaskPriorityDisinherit</STRONG> (Thumb, 188 bytes, Stack size 16 bytes, tasks.o(i.xTaskPriorityDisinherit))
@@ -4844,9 +4844,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 908 + Unknown Stack Size
 <LI>Call Chain = std::messages&lang;char&rang;::do_get(int, int, int, const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) const &rArr; std::locale::_C_make_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const &rArr; std::locale::locale(__rw::__rw_locale_imp*) &rArr; std::locale::_C_init() &rArr; __rw::__rw_locale_imp::__rw_locale_imp(const char*, unsigned, unsigned) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::operator =(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned, unsigned, unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
-<BR>[Calls]<UL><LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_make_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::basic_string(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&)
+<LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_make_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const
 <LI><a href="#[241]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_messages_base::_C_get_message(int, int, int) const
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_messages_base::_C_get_locale(int) const
 <LI><a href="#[226]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::basic_string(const char*, const std::allocator&lang;char&rang;&)
@@ -5543,8 +5543,8 @@ Local Symbols
 <LI>Call Chain = __sti___12_dataSend_cpp_UID &rArr; std::ios_base::Init::Init() &rArr; std::basic_ostream&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;::basic_ostream(std::basic_streambuf&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;*) &rArr; std::basic_ios&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;::init(std::basic_streambuf&lang;wchar_t, std::char_traits&lang;wchar_t&rang;&rang;*) &rArr; std::locale::_C_use_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const &rArr; std::locale::_C_make_facet(const std::locale::id&, bool, int, __rw::__rw_facet_base*(*)(int, const char*, unsigned)) const &rArr; std::locale::locale(__rw::__rw_locale_imp*) &rArr; std::locale::_C_init() &rArr; __rw::__rw_locale_imp::__rw_locale_imp(const char*, unsigned, unsigned) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::operator =(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned) &rArr; std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::replace(unsigned, unsigned, const char*, unsigned, unsigned, unsigned) &rArr; __rw::__rw_throw(int, ...) &rArr; std::__rw_exception::_C_vformat(int, std::__va_list) &rArr; [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
 <BR>[Calls]<UL><LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ios_base::Init::Init()
-<LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::id::id()
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
+<LI><a href="#[27c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::id::id()
 <LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_guard_acquire
 <LI><a href="#[180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::basic_string(const std::allocator&lang;char&rang;&)
 <LI><a href="#[226]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::basic_string(const char*, const std::allocator&lang;char&rang;&)

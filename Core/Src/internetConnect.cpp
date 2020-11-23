@@ -121,7 +121,7 @@ void internetConnect(void){
 	//uartSetup();
 	
 	MQTTSetup();
-	char testAT[] = "AT+QMTPUBEX=0,1000,1,0,\"UID/CAN\",45\r";
+	char testAT[] = "AT+QMTPUBEX=0,1000,1,0,\"54321/CAN\",45\r";
 	char test[] = "{\"msg_id\":\"512\",\"payload\":\"FFFFFFFFFFFFFFFF\"}\r";
 	while(1){
 	if (HAL_UART_Transmit(&huart2, (uint8_t*)testAT, sizeof(testAT), 100) != HAL_OK)
